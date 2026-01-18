@@ -2,6 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 interface Slide {
   word: string;
@@ -11,19 +14,24 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    word: "Explore",
+    word: "Make Your Brand Known",
     image: "/slider.jpg",
-    description: "We are still in the business of doing things",
+    description: "We help you stand out and be recognized through impactful branding and high-quality prints.",
   },
   {
-    word: "Create",
+    word: "Express Your Identity",
     image: "/slider2.jpg",
-    description: "Unleash your creativity",
+    description: "Bring your vision, values, and story to life through designs that reflect who you are.",
   },
   {
-    word: "Inspire",
+    word: "We Deliver Lasting Quality",
     image: "/slider6.jpg",
-    description: "Motivate and achieve greatness",
+    description: "High-quality prints and materials leave a strong impression on your customers, building trust and credibility.",
+  },
+  {
+    word: "Turn Ideas Into Impact",
+    image: "/slider9.jpg",
+    description: "Branded products create meaningful connections, encouraging loyalty and word-of-mouth promotion.",
   },
 ];
 
@@ -42,16 +50,49 @@ const Slider = () => {
   return (
     <div className="w-full md:h-screen h-400 flex flex-col lg:flex-row">
       {/* Left Side */}
-      <div className="lg:w-1/4 bg-white lg:bg-gray-400 text-red-500 lg:text-gray-600 flex flex-col justify-center p-10 pt-20">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2 md:mb-4 max-w-[80%] ">Welcome to Our Platform</h2>
-        <p className="text-sm md:text-lg text-gray-600 max-w-[70%]">
-          Discover amazing features, explore creative designs, and enjoy smooth
-          experiences with our slider.
+      <div className="lg:w-1/4 bg-white lg:bg-gray-300 text-red-500 lg:text-red-500 flex flex-col justify-center p-10 pt-20">
+        <h2 className="text-3xl md:text-4xl font-bold mb-2 md:mb-4 max-w-[80%] md:max-w-full ">
+          Welcome to Orena
+        </h2>
+        <p className="text-sm md:text-md text-gray-600 max-w-[70%] md:max-w-full">
+          Where everyday items become powerful expressions of identity. Explore
+          personalized designs crafted to reflect your values, vision, and
+          style.
         </p>
+        <div className="hidden lg:flex flex-col">
+          <div className="h-px w-[80%] bg-gray-500 mt-5 mb-3 " />
+          <div className="flex flex-row gap-3 items-center">
+            <Link href="/contact" className=" mb-10">
+              <FaWhatsapp size={22} />
+            </Link>
+            <Link href="/contact" className=" mb-10">
+              <FaXTwitter size={22} />
+            </Link>
+            <Link href="/contact" className=" mb-10">
+              <FaFacebookF size={22} />
+            </Link>
+            <Link href="/contact" className=" mb-10">
+              <FaInstagram size={22} />
+            </Link>
+          </div>
+          <h1 className="text-[13px] font-bold text-gray-600 ">
+           Let&#39;s Build Your Brand Together
+          </h1>
+          <p className="md:text-[12px]  text-gray-600 max-w-[70%] md:max-w-full">
+           From personalized apparel to custom accessories, we&#39;re ready to bring your ideas to life. Contact us and let&#39;s get started.
+          </p>
+
+          <Link
+            href="/contact"
+            className="bg-red-500 rounded-full py-2 mt-5 text-xs px-5 text-white max-w-fit"
+          >
+            Contact Us
+          </Link>
+        </div>
       </div>
 
       {/* Right Side */}
-      <div className="md:w-2/2 relative flex items-center justify-center h-96 md:h-screen">
+      <div className="md:w-2/2 relative flex items-center  justify-center h-96 md:h-screen">
         {/* Background Image */}
         <Image
           src={slides[current].image}
@@ -62,12 +103,12 @@ const Slider = () => {
         <div className="bg-black/60 z-20 absolute inset-0" />
 
         {/* Word in front */}
-        <div className="absolute z-20 items-center  justify-center">
+        <div className="absolute z-20 items-center px-5  justify-center">
           <div className="text-left">
-            <h1 className="text-4xl text-white font-bold drop-shadow-lg">
+            <h1 className="text-2xl md:text-4xl text-white font-bold drop-shadow-lg">
               {slides[current].word}
             </h1>
-            <p className="mt-2 text-white text-lg">
+            <p className="mt-2 text-gray-400 text-sm md:text-lg font-extralight w-[70%] md:w-full">
               {slides[current].description}
             </p>
           </div>
@@ -76,23 +117,23 @@ const Slider = () => {
         {/* Bottom Info Bar */}
         <div className="absolute bottom-5 hidden md:flex opacity-60 w-[90%] bg-gray-300 backdrop-blur-2xl bg-opacity-50 z-20 text-gray-600 rounded-md  justify-between p-5">
           <div className="flex-1 text-center flex-col flex">
-            <h1>Info 1</h1>
+            <h1 className="font-bold">Quality</h1>
             <p className="text-xs font-light">
-              this is where the paragraph will be
+             Premium materials, clean finishes, and lasting prints
             </p>{" "}
           </div>
-          <div className="w-px relative h-9 bg-gray-600" />
+          <div className="w-px relative mx-3 h-9 bg-gray-600" />
           <div className="flex-1 text-center flex-col flex">
-            <h1>Info 2</h1>
+            <h1 className="font-bold">Creativity</h1>
             <p className="text-xs font-light">
-              this is where the paragraph will be
+              Designs that tell stories and express identity
             </p>{" "}
           </div>
-          <div className="w-px relative h-9 bg-gray-600" />
+          <div className="w-px relative mx-4 h-9 bg-gray-600" />
           <div className="flex-1 text-center flex-col flex">
-            <h1>Info 3</h1>
+            <h1 className="font-bold">Precision</h1>
             <p className="text-xs font-light">
-              this is where the paragraph will be
+              Attention to detail in every print and customization
             </p>{" "}
           </div>
         </div>
