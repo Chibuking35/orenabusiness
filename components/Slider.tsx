@@ -48,9 +48,9 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className="w-full md:h-screen h-400 flex flex-col lg:flex-row">
+    <div className="w-full md:h-screen h-fit flex flex-col lg:flex-row">
       {/* Left Side */}
-      <div className="lg:w-1/4 bg-white lg:bg-gray-300 text-red-500 lg:text-red-500 flex flex-col justify-center p-10 pt-20">
+      <div className="lg:w-1/4 bg-white lg:bg-gray-300 text-red-500 lg:text-red-500 flex flex-col justify-center p-3 md:p-15  pt-20">
         <h2 className="text-3xl md:text-4xl font-bold mb-2 md:mb-4 max-w-[80%] md:max-w-full ">
           Welcome to Orena
         </h2>
@@ -78,7 +78,7 @@ const Slider = () => {
           <h1 className="text-[13px] font-bold text-gray-600 ">
            Let&#39;s Build Your Brand Together
           </h1>
-          <p className="md:text-[12px]  text-gray-600 max-w-[70%] md:max-w-full">
+          <p className="md:text-[12px]  text-gray-500 max-w-[70%] md:max-w-full">
            From personalized apparel to custom accessories, we&#39;re ready to bring your ideas to life. Contact us and let&#39;s get started.
           </p>
 
