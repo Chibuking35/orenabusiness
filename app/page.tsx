@@ -16,7 +16,7 @@ const Home = () => {
       <Slider />
 
       <div className=" bg-white  flex flex-col  md:flex-row py-7 md:py-6">
-        <div className="bg-gray-200 w-full flex flex-col md:flex-row">
+        <div className=" w-full flex flex-col md:flex-row">
           <div className="w-full p-3 md:px-6 md:my-20">
             <ItemGrid />
           </div>
@@ -109,7 +109,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-black/55 z-10" />
 
         <div className="absolute z-20 text-2xl text-white font-bold">
-          <div className="flex flex-row gap-3">
+          <div className="flex flex-col md:flex-row gap-3">
             <Link
                href="https://wa.me/2349161637046"
               className="flex flex-row items-center justify-center gap-1 text-black bg-white opacity-60 rounded-full hover:scale-105 duration-100 px-4 py-2"

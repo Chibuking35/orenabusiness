@@ -11,7 +11,7 @@ export default async function ItemDetail({ params }: { params: { id: string } })
   if (!item) return <p className="p-6">Item not found</p>;
 
   return (
-    <div className="p-6 pt-20 ">
+    <div className="p-6 pt-20 bg-white">
       <div className="flex flex-col md:flex-row gap-6 ">
         <div className="md:w-1/2">
           <Image
