@@ -1,11 +1,14 @@
 import ItemGrid from "@/components/ItemGrid";
 import Slider from "@/components/Slider";
 import Image from "next/image";
+import Link from "next/link";
 import { CgToolbarTop } from "react-icons/cg";
+import { FaWhatsapp } from "react-icons/fa";
 import { FaCircleDot } from "react-icons/fa6";
 import { GoDotFill } from "react-icons/go";
 import { GrCubes } from "react-icons/gr";
-import { MdTrackChanges } from "react-icons/md";
+import { IoCallOutline } from "react-icons/io5";
+import { MdOutlineMarkEmailUnread, MdTrackChanges } from "react-icons/md";
 
 const Home = () => {
   return (
@@ -94,9 +97,40 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="relative w-full h-96 flex items-center bg-amber-400 justify-center">
+        <Image
+          src="/slider.jpg"
+          alt="career"
+          fill
+          className="object-cover  z-10"
+          priority
+        />
 
-      
-      
+        <div className="absolute inset-0 bg-black/90 z-30" />
+
+        <div className="absolute z-20 text-2xl text-white font-bold">
+          <div className="flex flex-row gap-3">
+            <Link
+               href="https://wa.me/2349161637046"
+              className="flex flex-row items-center justify-center gap-1 text-black bg-white opacity-60 rounded-full hover:scale-125 duration-100 px-4 py-2"
+            >
+              <FaWhatsapp /> <p className="text-sm font-light opacity-100"> Chat on WhatsApp</p>
+            </Link>
+            <Link
+              href="mailto:cnwigwe525@gmail.com"
+              className="flex flex-row items-center justify-center gap-1 text-black bg-white opacity-60 rounded-full hover:scale-125 duration-100 px-4 py-2"
+            >
+              <MdOutlineMarkEmailUnread /> <p className="text-sm font-light opacity-100"> Email Us</p>
+            </Link>
+            <Link
+                href="tel:+2349161637046"
+              className="flex flex-row items-center justify-center gap-1 text-black bg-white opacity-60 rounded-full hover:scale-125 duration-100 px-4 py-2"
+            >
+             <IoCallOutline /> <p className="text-sm font-light opacity-100"> Call us</p>
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
