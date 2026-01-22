@@ -102,11 +102,11 @@ const Home = () => {
           src="/slider.jpg"
           alt="career"
           fill
-          className="object-cover  z-10"
+          className="object-cover  z-0"
           priority
         />
 
-        <div className="absolute inset-0 bg-black/90 z-30" />
+        <div className="absolute inset-0 bg-black/55 z-10" />
 
         <div className="absolute z-20 text-2xl text-white font-bold">
           <div className="flex flex-row gap-3">
