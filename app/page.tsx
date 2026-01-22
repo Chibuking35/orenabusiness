@@ -112,19 +112,19 @@ const Home = () => {
           <div className="flex flex-row gap-3">
             <Link
                href="https://wa.me/2349161637046"
-              className="flex flex-row items-center justify-center gap-1 text-black bg-white opacity-60 rounded-full hover:scale-125 duration-100 px-4 py-2"
+              className="flex flex-row items-center justify-center gap-1 text-black bg-white opacity-60 rounded-full hover:scale-105 duration-100 px-4 py-2"
             >
               <FaWhatsapp /> <p className="text-sm font-light opacity-100"> Chat on WhatsApp</p>
             </Link>
             <Link
               href="mailto:cnwigwe525@gmail.com"
-              className="flex flex-row items-center justify-center gap-1 text-black bg-white opacity-60 rounded-full hover:scale-125 duration-100 px-4 py-2"
+              className="flex flex-row items-center justify-center gap-1 text-black bg-white opacity-60 rounded-full hover:scale-105 duration-100 px-4 py-2"
             >
               <MdOutlineMarkEmailUnread /> <p className="text-sm font-light opacity-100"> Email Us</p>
             </Link>
             <Link
                 href="tel:+2349161637046"
-              className="flex flex-row items-center justify-center gap-1 text-black bg-white opacity-60 rounded-full hover:scale-125 duration-100 px-4 py-2"
+              className="flex flex-row items-center justify-center gap-1 text-black bg-white opacity-60 rounded-full hover:scale-105 duration-100 px-4 py-2"
             >
              <IoCallOutline /> <p className="text-sm font-light opacity-100"> Call us</p>
             </Link>
