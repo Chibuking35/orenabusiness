@@ -5,7 +5,7 @@ export default function ItemCard({ item }: any) {
   return (
     <Link href={`/items/${item.id}`}>
       <div className="bg-gray-100 rounded overflow-hidden cursor-pointer hover:shadow-lg transition">
-        <h3 className="font-semibold text-gray-700 p-2">
+        <h3 className="font-semibold text-red-500 p-2">
           {item.title}
         </h3>
 

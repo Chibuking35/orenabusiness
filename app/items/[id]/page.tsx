@@ -23,11 +23,11 @@ export default async function ItemDetail({ params }: { params: { id: string } })
           />
         </div>
         <div className="md:w-1/2">
-          <h1 className="text-3xl font-bold mb-2">{item.title}</h1>
+          <h1 className="text-3xl font-bold mb-2 text-gray-600">{item.title}</h1>
           <p className="text-xl text-green-600 mb-4">{item.price}</p>
-          <p className="text-gray-700 mb-6">{item.description}</p>
+          <p className="text-gray-500 mb-6">{item.description}</p>
           <Link href='/contact'>
-          <button className="px-3 py-2 bg-white text-red-500 rounded-lg">
+          <button className="px-3 py-2 bg-red-500 text-white rounded-lg">
             Contact
           </button></Link>
         </div>

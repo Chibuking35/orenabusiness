@@ -15,10 +15,10 @@ const Footer = () => {
       <div className="justify-between flex flex-col md:flex-row gap-13 md:gap-0">
         {/* first div  */}
         <div className="flex-1 flex-col gap-5 md:gap-5">
-          <div className="flex flex-row gap-2 justify-start items-baseline">
+          <div className="flex flex-row gap-1 justify-start items-baseline">
             <Image src="/logo.png" alt="orena logo" width={30} height={30} />
 
-            <h1 className="text-xl font-semibold text-red-500 ">Orena</h1>
+            <h1 className="text-xl font-semibold text-red-500 ">rena</h1>
           </div>
           <h1 className="text-sm mt-2 text-gray-500 max-w-md">
             Orena is a creative branding company committed to transforming

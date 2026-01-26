@@ -73,7 +73,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex gap-1 items-baseline">
           <Image src="/logo.png" alt="orena logo" width={30} height={30} />
-          <h1 className="text-xl font-semibold text-red-500">Orena</h1>
+          <h1 className="text-xl font-semibold text-red-500">rena</h1>
         </div>
 
         {/* Desktop Menu */}

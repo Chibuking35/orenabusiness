@@ -15,7 +15,7 @@ interface Slide {
 const slides: Slide[] = [
   {
     word: "Make Your Brand Known",
-    image: "/slider.jpg",
+    image: "/s1.jpg",
     description: "We help you stand out and be recognized through impactful branding and high-quality prints.",
   },
   {
