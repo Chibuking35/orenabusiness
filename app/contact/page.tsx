@@ -103,7 +103,7 @@ const Contact = () => {
         </div>
 
         <div className="flex-1 ">
-          <div className="relative hidden md:flex p-4 w-full h-96">
+          <div className="relative flex p-4 w-full h-96">
             <Image
               src="/c1.jpg"
               alt=""

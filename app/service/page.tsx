@@ -61,10 +61,10 @@ const Service = () => {
 
       <div className="flex w-full p-5 gap-10 py-10 mt-4 flex-col lg:flex-row">
         <div className="flex-1">
-          <div className="inset-0 rounded-2xl bg-blue-950 p-5 md:p-8">
+          <div className="inset-0 rounded-2xl bg-red-500 p-5 md:p-8">
             <MdIndeterminateCheckBox size={30} className="text-white" />
 
-            <div className="mt-3 text-xs text-gray-500">
+            <div className="mt-3 text-xs text-white">
               <h1>
                 At our core, Orena is a creative branding company that
                 transforms everyday items into meaningful expressions of
@@ -90,7 +90,7 @@ const Service = () => {
 
             <div className="absolute inset-0 z-20 flex items-center justify-center">
               <h1 className="px-10 py-2 rounded-full bg-white/50 backdrop-blur-sm text-sm text-blue-950">
-           Make your brand stand out
+                Make your brand stand out
               </h1>
             </div>
           </div>
@@ -99,11 +99,11 @@ const Service = () => {
           <div className="p-5 md:p-8 w-full h-full bg-gray-200 rounded-2xl">
             <h1 className="text-5xl text-gray-500 ">100+</h1>
             <h5 className="text-gray-500 text-sm font-bold pt-2">
-              Pro Software Engineer
+              Quality Spectrum{" "}
             </h5>
             <p className="font-light text-xs text-gray-500 py-2">
-              Our Pro Software Engineers train learners in coding, design, and
-              digital tools with real-world experience.
+              Orena delivers high-quality prints and branding, from reliable
+              basics to professional finishes and premium, flawless results.
             </p>
 
             <div className="flex-row  flex mt-4 ">
@@ -111,22 +111,17 @@ const Service = () => {
                 {/* beginners div  */}
                 <div className="flex flex-row  justify-between items-center gap-4">
                   <div className="flex-1">
-                    <div>Beginners</div>
+                    <div>Basic</div>
                   </div>
                   <div className="flex-1 ">
                     <div className="flex text-red-500 flex-row gap-0.5">
                       {" "}
-                      <FaCircle size={10}  />{" "}
-                      <FaCircle size={10}  />{" "}
-                      <FaCircle size={10}  />{" "}
-                      <FaCircle size={10}  />{" "}
+                      <FaCircle size={10} /> <FaCircle size={10} />{" "}
+                      <FaCircle size={10} /> <FaCircle size={10} />{" "}
+                      <FaCircle size={10} /> <FaCircle size={10} />{" "}
+                      <FaCircle size={10} /> <FaCircle size={10} />{" "}
+                      <FaCircle size={10} /> <FaCircle size={10} />{" "}
                       <FaCircle size={10} />{" "}
-                      <FaCircle size={10}  />{" "}
-                      <FaCircle size={10}  />{" "}
-                      <FaCircle size={10} />{" "}
-                      <FaCircle size={10} />{" "}
-                      <FaCircle size={10}  />{" "}
-                      <FaCircle size={10}  />{" "}
                     </div>
                   </div>
                   <div className="flex-1">
@@ -136,18 +131,15 @@ const Service = () => {
                 </div>
                 <div className="flex flex-row  justify-between items-center gap-4">
                   <div className="flex-1">
-                    <div> Intermidiate</div>
+                    <div>Professional</div>
                   </div>
                   <div className="flex-1 ">
                     <div className="flex text-red-500 flex-row gap-0.5">
                       {" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
+                      <FaCircle size={10} /> <FaCircle size={10} />{" "}
+                      <FaCircle size={10} /> <FaCircle size={10} />{" "}
+                      <FaCircle size={10} /> <FaCircle size={10} />{" "}
+                      <FaCircle size={10} />{" "}
                     </div>
                   </div>
                   <div className="flex-1">
@@ -157,18 +149,15 @@ const Service = () => {
                 </div>
                 <div className="flex flex-row  justify-between items-center gap-4">
                   <div className="flex-1">
-                    <div>Advanced</div>
+                    <div>Premium</div>
                   </div>
                   <div className="flex-1 ">
                     <div className="flex text-red-500 flex-row gap-0.5">
                       {" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
+                      <FaCircle size={10} /> <FaCircle size={10} />{" "}
+                      <FaCircle size={10} /> <FaCircle size={10} />{" "}
+                      <FaCircle size={10} /> <FaCircle size={10} />{" "}
+                      <FaCircle size={10} />{" "}
                     </div>
                   </div>
                   <div className="flex-1">
