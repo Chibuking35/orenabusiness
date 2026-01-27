@@ -1,14 +1,11 @@
-import { Link } from "lucide-react"
-import Image from "next/image"
-import { IoMdArrowDropright } from "react-icons/io"
+import { Link } from "lucide-react";
+import Image from "next/image";
+import { IoMdArrowDropright } from "react-icons/io";
 
-const About =()=> {
-    return (
-        <div className="min-h-screen bg-white" >
-
-
- 
-  <div className="w-full h-64 relative flex items-center justify-center">
+const About = () => {
+  return (
+    <div className="min-h-screen bg-white">
+      <div className="w-full h-64 relative flex items-center justify-center">
         <Image
           src="/a1.jpg"
           alt="contact background picture"
@@ -21,25 +18,33 @@ const About =()=> {
         <h1 className="absolute z-30 text-white text-2xl font-semibold">
           About Us
         </h1>
-</div>
+      </div>
 
-
-  <div className=" bg-white  flex flex-col  md:flex-row pb-4 md:pb-6">
+      <div className=" bg-white  flex flex-col  md:flex-row pb-4 md:pb-6">
         <div className="bg-gray-200 w-full flex flex-col md:flex-row">
           <div className="w-full ">
             <div className="flex w-full p-6 py-5 md:py-20 md:mt-10 md:p-10 flex-col md:flex-row ">
               <div className="flex-1">
                 <div className="flex flex-col gap-6 md:px-7 md:py-0 py-6">
-                  <h1 className=" text-2xl md:text-4xl text-red-500 font-bold">
-                    Who we Are
+                  <h1 className=" text-sm md:text-4xl text-red-500 font-bold">
+                    About Us
                   </h1>
                   <p className="text-base text-justify text-gray-500 first-letter:text-3xl first-letter:font-bold first-letter:float-left first-letter:mr-1 first-letter:leading-[0.8]">
-                    Orena is a creative branding company dedicated to turning
-                    everyday products into meaningful expressions of identity.
-                    We specialize in custom t-shirts, personalized mugs
-                    thoughtfully designed to reflect your values, vision, and
-                    style. At Orena, branding goes beyond printing; it&apos;s
-                    about telling your story through design.
+                    Orena is a creative branding company that brings meaning to
+                    everyday products. Through custom t-shirts and personalized
+                    mugs, we help individuals and brands express their values,
+                    vision, and style. For us, branding goes beyond ink on
+                    materials—it &apos;s about telling your story through
+                    design.
+                  </p>
+
+                  <p className="text-gray-500">
+                    We work closely with individuals, businesses, and
+                    organizations to create designs that connect, inspire, and
+                    leave a lasting impression. From concept to final print,
+                    every detail is carefully crafted to ensure quality,
+                    creativity, and authenticity—helping your brand stand out
+                    and be remembered.
                   </p>
                   <div className="flex justify-start">
                     <Link href="/contact">
@@ -53,7 +58,7 @@ const About =()=> {
               <div className="flex-1 ">
                 <div className="relative flex p-4 w-full h-88 ">
                   <Image
-                    src="/slider9.jpg"
+                    src="/slider6.jpg"
                     alt=""
                     fill
                     className="object-cover rounded-2xl z-0 "
@@ -64,7 +69,7 @@ const About =()=> {
           </div>
         </div>
       </div>
-        
+
       <div className="w-full  bg-white p-5  md:p-20">
         <div className="md:flex hidden flex-col md:flex-row gap-5 md:gap-10 w-full ">
           {/* the first box */}
@@ -87,9 +92,9 @@ const About =()=> {
                 href="/read-more"
                 className="flex flex-rowv justify-start items-center cursor-pointer"
               >
-                <h3 className="font-bold  text-gray-400 flex underline text-sm">
+                <div className="font-bold  text-gray-400 flex underline text-sm">
                   Read More
-                </h3>{" "}
+                </div>{" "}
                 <IoMdArrowDropright className="flex  text-gray-400" size={13} />
               </Link>
             </div>
@@ -121,12 +126,7 @@ const About =()=> {
         </div>
       </div>
 
-
-
-
-
-
-       <div className="py-5 md:py-7  md:px-10 justify-center items-center">
+      <div className="py-5 md:py-7  md:px-10 justify-center items-center">
         {/* the heading */}
 
         <div className="flex justify-center flex-col items-center p-4">
@@ -178,7 +178,9 @@ const About =()=> {
             <div className="flex flex-row pr-4 mb-5">
               <h1 className="mr-4 font-bold text-2xl text-blue-950">03</h1>
               <div className="flex flex-col justify-start items-start">
-                <h3 className="text-lg font-bold text-blue-950">Professional & Detailed</h3>
+                <h3 className="text-lg font-bold text-blue-950">
+                  Professional & Detailed
+                </h3>
                 <p className="text-gray-500 text-xs">
                   We deliver software development solutions that combine
                   creativity, innovation, and technical expertise to build
@@ -213,15 +215,7 @@ const About =()=> {
           </div>
         </div>
       </div>
-      
-
-
-
-
-
-
-
-        </div>
-    )
-}
-export default About
+    </div>
+  );
+};
+export default About;
