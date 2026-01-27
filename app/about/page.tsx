@@ -22,6 +22,48 @@ const About =()=> {
           About Us
         </h1>
 </div>
+
+
+  <div className=" bg-white  flex flex-col  md:flex-row pb-4 md:pb-6">
+        <div className="bg-gray-200 w-full flex flex-col md:flex-row">
+          <div className="w-full ">
+            <div className="flex w-full p-6 py-5 md:py-20 md:mt-10 md:p-10 flex-col md:flex-row ">
+              <div className="flex-1">
+                <div className="flex flex-col gap-6 md:px-7 md:py-0 py-6">
+                  <h1 className=" text-2xl md:text-4xl text-red-500 font-bold">
+                    Who we Are
+                  </h1>
+                  <p className="text-base text-justify text-gray-500 first-letter:text-3xl first-letter:font-bold first-letter:float-left first-letter:mr-1 first-letter:leading-[0.8]">
+                    Orena is a creative branding company dedicated to turning
+                    everyday products into meaningful expressions of identity.
+                    We specialize in custom t-shirts, personalized mugs
+                    thoughtfully designed to reflect your values, vision, and
+                    style. At Orena, branding goes beyond printing; it&apos;s
+                    about telling your story through design.
+                  </p>
+                  <div className="flex justify-start">
+                    <Link href="/contact">
+                      <button className="px-4 py-2 bg-red-500 flex rounded  text-white text-sm">
+                        Let&apos;s talk
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="flex-1 ">
+                <div className="relative flex p-4 w-full h-88 ">
+                  <Image
+                    src="/slider9.jpg"
+                    alt=""
+                    fill
+                    className="object-cover rounded-2xl z-0 "
+                  />{" "}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
         
       <div className="w-full  bg-white p-5  md:p-20">
         <div className="md:flex hidden flex-col md:flex-row gap-5 md:gap-10 w-full ">
