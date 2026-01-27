@@ -23,18 +23,17 @@ const Service = () => {
       <div className="flex flex-col md:flex-row p-5 md:p-10  mt-4 md:mt-10">
         <div className="flex-1 ">
           <h1 className="text-start font-bold text-lg text-red-500 mb-4 md:mb-0">
-            Who We Are?
+            Who We Do?
           </h1>
         </div>
         <div className="flex-1">
           <p className="text-sm text-gray-500 text-justify md:text-left">
-            We are a tech company dedicated to building innovative software
-            solutions while also sharing our knowledge with those who want to
-            learn. Beyond creating technology, we provide practical, hands-on
-            training in areas like coding, design, and digital tools, helping
-            learners gain real-world skills. With a focus on growth and
-            innovation, we aim to empower both our clients and learners to
-            achieve success and unlock their potential.
+            Orena is a creative branding company dedicated to transforming
+            everyday items into powerful expressions of identity. We specialize
+            in personalized t-shirts, custom mugs, and thoughtfully designed
+            accessories, each crafted to reflect your values, vision, and style.
+            At Orena, customization goes beyond printing it&rsquo;s the art of
+            telling your story through intentional design.
           </p>
         </div>
       </div>
@@ -42,9 +41,21 @@ const Service = () => {
       <div className="py-5 md:py-10 px-3 md:px-10 mt-3 w-full flex flex-col justify-center items-center">
         <h1 className="text-2xl md:text-3xl text-red-500 ">Facts about Us </h1>
         <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-10 px-4 md:px-5 py-5 md:py-10 mt-3 text-gray-500">
-          <CounterCard label="Hours of training" suffix="+" endNumber={12000} />
-          <CounterCard label="Student's Attention" suffix="%" endNumber={88} />
-          <CounterCard label="Active mentors" suffix="+" endNumber={300} />
+          <CounterCard
+            label="Positive Client Feedback"
+            suffix="%"
+            endNumber={86}
+          />
+          <CounterCard
+            label="Brands & Businesses Served"
+            suffix="+"
+            endNumber={100}
+          />
+          <CounterCard
+            label="Returning Brand Clients"
+            suffix="+"
+            endNumber={88}
+          />
         </div>
       </div>
 
@@ -54,40 +65,35 @@ const Service = () => {
             <MdIndeterminateCheckBox size={30} className="text-white" />
 
             <div className="mt-3 text-xs text-gray-500">
-              <span className="text-sm   text-gray-300">
-                {" "}
-                At our core, we are a technology company that builds powerful
-                software to solve real-world challenges.
-              </span>{" "}
-              Beyond development, we extend our knowledge through training
-              programs designed for anyone looking to grow in tech. From coding
-              to design and digital tools, we combine practical experience with
-              learning opportunities,
-              <span className="text-sm  text-gray-300">
-                {" "}
-                ensuring both our clients and learners are prepared for success
-                in a fast-changing digital world.
-              </span>
+              <h1>
+                At our core, Orena is a creative branding company that
+                transforms everyday items into meaningful expressions of
+                identity. Beyond creating custom products, we share our
+                expertise through design and branding guidance for individuals
+                and businesses looking to elevate their presence. From
+                personalized apparel to custom accessories, we combine
+                creativity with practical solutions, ensuring our clients&rsquo;
+                brands stand out in a competitive market.
+              </h1>
             </div>
           </div>
         </div>
         <div className="flex-1">
-<div className="relative w-full h-60 lg:h-[400px]">
-  <Image
-    src="/solve.jpg"
-    alt="plan"
-    fill
-    className="object-cover rounded-2xl"
-    priority
-  />
+          <div className="relative w-full h-60 lg:h-100">
+            <Image
+              src="/solve.jpg"
+              alt="plan"
+              fill
+              className="object-cover rounded-2xl"
+              priority
+            />
 
-  <div className="absolute inset-0 z-20 flex items-center justify-center">
-    <h1 className="px-10 py-2 rounded-full bg-white/50 backdrop-blur-sm text-sm text-blue-950">
-      Empowering People
-    </h1>
-  </div>
-</div>
-
+            <div className="absolute inset-0 z-20 flex items-center justify-center">
+              <h1 className="px-10 py-2 rounded-full bg-white/50 backdrop-blur-sm text-sm text-blue-950">
+           Make your brand stand out
+              </h1>
+            </div>
+          </div>
         </div>
         <div className="flex-1">
           <div className="p-5 md:p-8 w-full h-full bg-gray-200 rounded-2xl">
@@ -108,19 +114,19 @@ const Service = () => {
                     <div>Beginners</div>
                   </div>
                   <div className="flex-1 ">
-                    <div className="flex flex-row gap-0.5">
+                    <div className="flex text-red-500 flex-row gap-0.5">
                       {" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
-                      <FaCircle size={10} className="text-blue-950" />{" "}
+                      <FaCircle size={10}  />{" "}
+                      <FaCircle size={10}  />{" "}
+                      <FaCircle size={10}  />{" "}
+                      <FaCircle size={10}  />{" "}
+                      <FaCircle size={10} />{" "}
+                      <FaCircle size={10}  />{" "}
+                      <FaCircle size={10}  />{" "}
+                      <FaCircle size={10} />{" "}
+                      <FaCircle size={10} />{" "}
+                      <FaCircle size={10}  />{" "}
+                      <FaCircle size={10}  />{" "}
                     </div>
                   </div>
                   <div className="flex-1">
@@ -133,7 +139,7 @@ const Service = () => {
                     <div> Intermidiate</div>
                   </div>
                   <div className="flex-1 ">
-                    <div className="flex flex-row gap-0.5">
+                    <div className="flex text-red-500 flex-row gap-0.5">
                       {" "}
                       <FaCircle size={10} className="text-blue-950" />{" "}
                       <FaCircle size={10} className="text-blue-950" />{" "}
@@ -154,7 +160,7 @@ const Service = () => {
                     <div>Advanced</div>
                   </div>
                   <div className="flex-1 ">
-                    <div className="flex flex-row gap-0.5">
+                    <div className="flex text-red-500 flex-row gap-0.5">
                       {" "}
                       <FaCircle size={10} className="text-blue-950" />{" "}
                       <FaCircle size={10} className="text-blue-950" />{" "}
