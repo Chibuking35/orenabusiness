@@ -8,10 +8,10 @@ import { useEffect, useRef, useState } from "react";
 import Masonry from "react-masonry-css";
 
 const Images = [
-  "/m6.jpg",
+    "/m1.jpg",
   "/m2.jpg",
   "/m5.jpg", "/m13.jpg","/m15.jpg","/m16.jpg",
-  "/m1.jpg",
+"/m6.jpg",
   "/m3.jpg","/m18.jpg",
   "/m4.jpg",
   "/m7.jpg",
