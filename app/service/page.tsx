@@ -52,7 +52,7 @@ const Service = () => {
             endNumber={100}
           />
           <CounterCard
-            label="Returning Brand Clients"
+            label="Returning Customer"
             suffix="+"
             endNumber={88}
           />
