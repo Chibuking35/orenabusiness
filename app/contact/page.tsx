@@ -6,7 +6,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 const Contact = () => {
   return (
     <div className=" min-h-screen bg-white">
-      <div className="w-full h-40 relative flex items-center justify-center">
+      <div className="w-full h-56 relative flex items-center justify-center">
         <Image
           src="/contact.jpg"
           alt="contact background picture"

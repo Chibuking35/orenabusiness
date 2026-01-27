@@ -8,7 +8,7 @@ const About =()=> {
 
 
  
-  <div className="w-full h-56 relative flex items-center justify-center">
+  <div className="w-full h-64 relative flex items-center justify-center">
         <Image
           src="/a1.jpg"
           alt="contact background picture"
