@@ -120,7 +120,7 @@ const GalleryVeiw = () => {
   }, [selectedImage, currentIndex]);
 
   return (
-    <div className="p-6 py-20 md:py-36 bg-white">
+    <div className="p-6 py-20 md:py-30 bg-white">
      
       {/* ✅ Pinterest Masonry Grid */}
       <Masonry
