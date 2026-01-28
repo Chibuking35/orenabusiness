@@ -23,7 +23,7 @@ const Service = () => {
       <div className="flex flex-col md:flex-row p-5 md:p-10  mt-4 md:mt-10">
         <div className="flex-1 ">
           <h1 className="text-start font-bold text-lg text-red-500 mb-4 md:mb-0">
-            Wh We Do?
+            What We Do?
           </h1>
         </div>
         <div className="flex-1">
