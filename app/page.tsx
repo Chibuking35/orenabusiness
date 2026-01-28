@@ -32,14 +32,18 @@ const Home = () => {
                     Who we Are
                   </h1>
                   <p className="text-base text-justify text-gray-500 first-letter:text-3xl first-letter:font-bold first-letter:float-left first-letter:mr-1 first-letter:leading-[0.8]">
-                    Orena is a creative branding company dedicated to turning
-                    everyday products into meaningful expressions of identity.
-                    We specialize in custom t-shirts, personalized mugs
-                    thoughtfully designed to reflect your values, vision, and
-                    style. At Orena, branding goes beyond printing; it&apos;s
+                    Orena is a creative branding and printing company dedicated
+                    to turning everyday products into meaningful expressions of
+                    identity. We specialize in high quality custom t shirts,
+                    personalized mugs, and professional paper prints such as
+                    business cards and flyers, along with many other branding
+                    and printing solutions. All our products are thoughtfully
+                    designed and printed to reflect your values, vision, and
+                    unique style. At Orena, branding goes beyond printing; it is
                     about telling your story through design.
                   </p>
                   <div className="flex justify-start">
+                    &apos;
                     <Link href="/contact">
                       <button className="px-4 py-2 bg-red-500 flex rounded  text-white text-sm">
                         Let&apos;s talk
@@ -88,7 +92,7 @@ const Home = () => {
           <div className="flex flex-col items-center  justify-center py-5">
             <MdTrackChanges size={50} className="mb-3" />
             <h3 className="font-bold mb-2">premium Design</h3>
-            <p className="text-xs text-center w-[70%]">
+            <p className="text-sm text-center w-[70%]">
               Crafted with precision, creativity, and attention to detail to
               elevate your brand.
             </p>
@@ -96,12 +100,18 @@ const Home = () => {
           <div className="flex flex-col items-center  justify-center py-5">
             <GrCubes size={50} className="mb-3" />
             <h3 className="font-bold mb-2">Quality</h3>
-            <p className=" text-center w-[70%] text-sm">From premium materials to flawless printing, every detail is crafted to last.</p>
+            <p className=" text-center w-[70%] text-sm">
+              From premium materials to flawless printing, every detail is
+              crafted to last.
+            </p>
           </div>
           <div className="flex flex-col items-center  justify-center py-5">
             <CgToolbarTop size={50} className="mb-3" />
             <h3 className="font-bold mb-2">Precision</h3>
-            <p className="text-xs text-center w-[70%]">Exact detailing and flawless execution in every design and print, delivered with absolute precision.</p>
+            <p className="text-sm text-center w-[70%]">
+              Exact detailing and flawless execution in every design and print,
+              delivered with absolute precision.
+            </p>
           </div>
         </div>
       </div>

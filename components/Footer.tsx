@@ -20,12 +20,12 @@ const Footer = () => {
 
             <h1 className="text-xl font-semibold text-red-500 ">rena</h1>
           </div>
-          <h1 className="text-sm mt-2 text-gray-500 max-w-md">
+          <h1 className="text-base text-justify md:text-left mt-2 text-gray-500 max-w-md">
             Orena is a creative branding company committed to transforming
             everyday items into powerful expressions of identity. We specialize
             in personalized t-shirts, custom mugs, and unique accessories, each
             designed with intention and crafted to reflect your values, vision,
-            and style. At Orena, customization goes beyond printing—it&#39;s the
+            and style. At Orena, customization goes beyond printing it&#39;s the
             art of storytelling through design.
           </h1>
           <div className="flex flex-col md:flex-row mt-8 gap-3 md:gap-5">

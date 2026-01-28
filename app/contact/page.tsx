@@ -34,7 +34,7 @@ const Contact = () => {
               creativity.
             </h1>
 
-            <h3 className="text-xs text-gray-600 mb-20">
+            <h3 className="text-sm text-gray-600 mb-20">
               Providing you with impactful branding solutions begins with a
               simple conversation. Our team is dedicated to understanding your
               brand, addressing your questions, and creating innovative

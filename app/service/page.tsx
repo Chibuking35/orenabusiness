@@ -23,19 +23,21 @@ const Service = () => {
       <div className="flex flex-col md:flex-row p-5 md:p-10  mt-4 md:mt-10">
         <div className="flex-1 ">
           <h1 className="text-start font-bold text-lg text-red-500 mb-4 md:mb-0">
-            Who We Do?
+            Wh We Do?
           </h1>
         </div>
         <div className="flex-1">
-          <p className="text-sm text-gray-500 text-justify md:text-left">
-            Orena is a creative branding company dedicated to transforming
-            everyday items into powerful expressions of identity. We specialize
-            in personalized t-shirts, custom mugs, and thoughtfully designed
-            accessories, each crafted to reflect your values, vision, and style.
-            At Orena, customization goes beyond printing it&rsquo;s the art of
-            telling your story through intentional design.
+          <p className="text-base text-gray-500 text-justify md:text-left">
+            Orena is a full service branding and printing company helping
+            individuals and businesses present their identity with clarity and
+            impact. We provide custom t shirts, branded mugs, business cards,
+            flyers, and a wide range of print solutions designed to communicate
+            your message effectively. Every project is handled with attention to
+            detail, quality printing, and purposeful design. At Orena, we help
+            you turn ideas into tangible brand experiences.
           </p>
         </div>
+        &rsquo;
       </div>
 
       <div className="py-5 md:py-10 px-3 md:px-10 mt-3 w-full flex flex-col justify-center items-center">
@@ -51,11 +53,7 @@ const Service = () => {
             suffix="+"
             endNumber={100}
           />
-          <CounterCard
-            label="Returning Customer"
-            suffix="+"
-            endNumber={88}
-          />
+          <CounterCard label="Returning Customer" suffix="%" endNumber={98} />
         </div>
       </div>
 
@@ -65,7 +63,7 @@ const Service = () => {
             <MdIndeterminateCheckBox size={30} className="text-white" />
 
             <div className="mt-3 text-xs text-white">
-              <h1>
+              <h1 className="text-base">
                 At our core, Orena is a creative branding company that
                 transforms everyday items into meaningful expressions of
                 identity. Beyond creating custom products, we share our
@@ -101,7 +99,7 @@ const Service = () => {
             <h5 className="text-gray-500 text-sm font-bold pt-2">
               Quality Spectrum{" "}
             </h5>
-            <p className="font-light text-xs text-gray-500 py-2">
+            <p className="font-light text-sm text-gray-500 py-2">
               Orena delivers high-quality prints and branding, from reliable
               basics to professional finishes and premium, flawless results.
             </p>

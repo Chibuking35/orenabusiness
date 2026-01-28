@@ -79,7 +79,7 @@ const Slider = () => {
            Let&#39;s Build Your Brand Together
           </h1>
           <p className="md:text-[12px]  text-gray-500 max-w-[70%] md:max-w-full">
-           From personalized apparel to custom accessories, we&#39;re ready to bring your ideas to life. Contact us and let&#39;s get started.
+           From personalized apparel to custom prints, we&#39;re ready to transform your ideas into meaningful designs. Reach out and let&#39;s get started.
           </p>
 
           <Link
