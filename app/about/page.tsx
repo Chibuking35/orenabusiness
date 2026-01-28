@@ -13,7 +13,7 @@ const About = () => {
           className="object-cover object-[30%_60%] z-10"
         />
 
-        <div className="absolute inset-0 bg-black/70 z-20" />
+        <div className="absolute inset-0 bg-black/60 z-20" />
 
         <h1 className="absolute z-30 text-white text-2xl font-semibold">
           About Us
@@ -70,7 +70,7 @@ const About = () => {
           <div className="flex-1 relative w-full  md:h-[20rem md:h-60">
             <Image src="/exp.jpg" alt="" fill className="object-cover z-0" />
 
-            <div className="absolute z-10 bottom-0 w-full h-[70%] bg-red-500 opacity-80" />
+            <div className="absolute z-10 bottom-0 w-full h-[70%] bg-black opacity-80" />
             <div className="absolute z-20 bottom-0 w-full p-5 h-[70%]">
               <h1 className="font-bold   text-gray-400 mb-2 text-sm">
                 Start A Good Plan
@@ -90,7 +90,7 @@ const About = () => {
           <div className="flex-1 relative w-full  md:h-[20rem md:h-60">
             <Image src="/plan.jpg" alt="" fill className="object-cover z-0" />
 
-            <div className="absolute z-10 bottom-0 w-full h-[20%] bg-red-500 opacity-80" />
+            <div className="absolute z-10 bottom-0 w-full h-[20%] bg-black opacity-80" />
 
             <h1 className="font-bold text-sm   text-gray-400 mb-2 absolute z-40 bottom-0.5 left-10 ">
               Turn your Idea into Reality
@@ -102,7 +102,7 @@ const About = () => {
           <div className="flex-1 relative w-full  md:h-[20rem md:h-60">
             <Image src="/a1.jpg" alt="" fill className="object-cover z-0" />
 
-            <div className="absolute z-10 bottom-0 w-full h-[20%] bg-red-500 opacity-80" />
+            <div className="absolute z-10 bottom-0 w-full h-[20%] bg-black opacity-80" />
 
             <h1 className="font-bold text-[12px] lg:text-sm left-10  absolute z-30 bottom-0.5  text-gray-400 mb-2 ">
               Connect with Experts
@@ -191,7 +191,7 @@ const About = () => {
 
               {/* Bottom image */}
               <Image
-                src="/a1.jpg"
+                src="/w2.jpg"
                 alt="Bottom"
                 width={400}
                 height={400}

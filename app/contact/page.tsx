@@ -14,7 +14,7 @@ const Contact = () => {
           className="object-cover object-[30%_60%] z-10"
         />
 
-        <div className="absolute inset-0 bg-black/70 z-20" />
+        <div className="absolute inset-0 bg-black/60 z-20" />
 
         <h1 className="absolute z-30 text-white text-2xl font-semibold">
           Contact Us
