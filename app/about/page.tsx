@@ -46,22 +46,15 @@ const About = () => {
                     creativity, and authenticity—helping your brand stand out
                     and be remembered.
                   </p>
-                  <div className="flex justify-start">
-                    <Link href="/contact">
-                      <button className="px-4 py-2 bg-red-500 flex rounded  text-white text-sm">
-                        Let&apos;s talk
-                      </button>
-                    </Link>
-                  </div>
                 </div>
               </div>
               <div className="flex-1 ">
-                <div className="relative flex p-4 w-full h-88 ">
+                <div className="relative flex  w-full h-88 ">
                   <Image
                     src="/slider6.jpg"
                     alt=""
                     fill
-                    className="object-cover rounded-2xl z-0 "
+                    className="object-cover rounded z-0 "
                   />{" "}
                 </div>
               </div>
@@ -75,40 +68,32 @@ const About = () => {
           {/* the first box */}
 
           <div className="flex-1 relative w-full  md:h-[20rem md:h-60">
-            <Image src="/a1.jpg" alt="" fill className="object-cover z-0" />
+            <Image src="/exp.jpg" alt="" fill className="object-cover z-0" />
 
-            <div className="absolute z-10 bottom-0 w-full h-[70%] bg-blue-950 opacity-80" />
+            <div className="absolute z-10 bottom-0 w-full h-[70%] bg-red-500 opacity-80" />
             <div className="absolute z-20 bottom-0 w-full p-5 h-[70%]">
               <h1 className="font-bold   text-gray-400 mb-2 text-sm">
                 Start A Good Plan
               </h1>
               <p className="text-gray-400 md:text-[8px] lg:text-xs mb-3">
-                Every successful journey begins with a well-thought-out plan.
-                Taking time to outline your goals, resources, and possible
-                challenges helps you stay focused and organized. A good plan
-                acts as a roadmap,
+                Every successful brand begins with a clear plan. Taking time to
+                understand your goals, audience, and message allows us to create
+                branding and printing solutions that are focused and consistent.
+                A well thought out plan acts as a roadmap, guiding every design
+                and print decision to ensure your brand stands out with purpose.
               </p>
-              <Link
-                href="/read-more"
-                className="flex flex-rowv justify-start items-center cursor-pointer"
-              >
-                <div className="font-bold  text-gray-400 flex underline text-sm">
-                  Read More
-                </div>{" "}
-                <IoMdArrowDropright className="flex  text-gray-400" size={13} />
-              </Link>
             </div>
           </div>
 
           {/* the second box */}
 
           <div className="flex-1 relative w-full  md:h-[20rem md:h-60">
-            <Image src="/a1.jpg" alt="" fill className="object-cover z-0" />
+            <Image src="/plan.jpg" alt="" fill className="object-cover z-0" />
 
-            <div className="absolute z-10 bottom-0 w-full h-[20%] bg-blue-950 opacity-80" />
+            <div className="absolute z-10 bottom-0 w-full h-[20%] bg-red-500 opacity-80" />
 
             <h1 className="font-bold text-sm   text-gray-400 mb-2 absolute z-40 bottom-0.5 left-10 ">
-              Set Clear Goals
+              Turn your Idea into Reality
             </h1>
           </div>
 
@@ -117,7 +102,7 @@ const About = () => {
           <div className="flex-1 relative w-full  md:h-[20rem md:h-60">
             <Image src="/a1.jpg" alt="" fill className="object-cover z-0" />
 
-            <div className="absolute z-10 bottom-0 w-full h-[20%] bg-blue-950 opacity-80" />
+            <div className="absolute z-10 bottom-0 w-full h-[20%] bg-red-500 opacity-80" />
 
             <h1 className="font-bold text-[12px] lg:text-sm left-10  absolute z-30 bottom-0.5  text-gray-400 mb-2 ">
               Connect with Experts
@@ -130,11 +115,12 @@ const About = () => {
         {/* the heading */}
 
         <div className="flex justify-center flex-col items-center p-4">
-          <h1 className="font-bold  text-xl text-blue-950 ">Why Choose us?</h1>
-          <p className="font-light text-sm md:w-120 mt-3 text-gray-500 text-center">
-            Creativity is at the heart of everything we do. By combining fresh
-            ideas with innovative technology, we design solutions that inspire,
-            engage, and drive real business growth.
+          <h1 className="font-bold  text-xl text-red-500 ">Why Choose us?</h1>
+          <p className="font-light text-sm md:w-120 mt-3 text-gray-600 text-center">
+            Creativity is at the heart of everything we do. By blending original
+            ideas with expert design and high quality printing, we create
+            branding solutions that inspire, engage, and help your business make
+            a lasting impression.
           </p>
         </div>
         {/* the body and image  */}
@@ -146,46 +132,46 @@ const About = () => {
           <div className="flex-1 ">
             {/* number one  */}
             <div className="flex flex-row pr-4 mb-5">
-              <h1 className="mr-4 font-bold text-2xl text-blue-950">01</h1>
+              <h1 className="mr-4 font-bold text-2xl text-red-500">01</h1>
               <div className="flex flex-col justify-start items-start">
-                <h3 className="text-lg font-bold text-blue-950">
-                  Creative and Responsive Software
+                <h3 className="text-lg font-bold text-red-500">
+                  Creative and Impactful Branding
                 </h3>
-                <p className="text-gray-500 text-xs">
-                  We build creative and responsive software solutions tailored
-                  to your business needs, ensuring seamless performance,
-                  scalability, and an engaging user experience.
+                <p className="text-gray-500 text-sm">
+                  We design and produce creative branding solutions tailored to
+                  your business identity, ensuring every logo, print, and design
+                  communicates your vision clearly and leaves a lasting
+                  impression.
                 </p>
               </div>
             </div>
             {/* number two  */}
             <div className="flex flex-row pr-4 mb-5">
-              <h1 className="mr-4 font-bold text-2xl text-blue-950">02</h1>
+              <h1 className="mr-4 font-bold text-2xl text-red-500">02</h1>
               <div className="flex flex-col justify-start items-start">
-                <h3 className="text-lg font-bold text-blue-950">
-                  Advanced Security Solutions
+                <h3 className="text-lg font-bold text-red-500">
+                  High Quality Printing Solutions
                 </h3>
-                <p className="text-gray-500 text-xs ">
-                  We embed cybersecurity into every stage of our process,
-                  delivering enterprise-grade solutions that protect sensitive
-                  data, defend against evolving threats, safeguard critical
-                  operations, and ensure business continuity with confidence and
-                  resilience.
+                <p className="text-gray-500 text-sm ">
+                  We deliver precise and vibrant printing services for products
+                  like t-shirts, mugs, and promotional materials, using the best
+                  techniques to ensure durability, clarity, and consistency
+                  across all items.
                 </p>
               </div>
             </div>
             {/* number three  */}
             <div className="flex flex-row pr-4 mb-5">
-              <h1 className="mr-4 font-bold text-2xl text-blue-950">03</h1>
+              <h1 className="mr-4 font-bold text-2xl text-red-500">03</h1>
               <div className="flex flex-col justify-start items-start">
-                <h3 className="text-lg font-bold text-blue-950">
-                  Professional & Detailed
+                <h3 className="text-lg font-bold text-red-500">
+                  Professional and Thoughtful Designs
                 </h3>
-                <p className="text-gray-500 text-xs">
-                  We deliver software development solutions that combine
-                  creativity, innovation, and technical expertise to build
-                  applications that enhance productivity, streamline operations,
-                  and drive measurable business results.
+                <p className="text-gray-500 text-sm">
+                  We combine creativity, strategy, and attention to detail to
+                  craft designs that resonate with your audience, strengthen
+                  your brand presence, and make your products stand out in the
+                  market.
                 </p>
               </div>
             </div>
@@ -196,7 +182,7 @@ const About = () => {
             <div className="relative w-full h-100">
               {/* Top image */}
               <Image
-                src="/a1.jpg"
+                src="/w1.jpg"
                 alt="Top"
                 width={300}
                 height={300}

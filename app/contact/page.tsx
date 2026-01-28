@@ -48,7 +48,22 @@ const Contact = () => {
                 <h1 className="font-bold text-xl text-gray-500">Call Center</h1>
                 <p className="font-light text-sm mt-2 text-gray-600">
                   <span className="font-bold">Phone: </span>
-                  <br /> +234-916-163-7046 <br />+234-9022-5094-63
+                   
+              
+             
+               <br />
+                       <Link
+              href="tel:+2349161637046" >
+                 +234-916-163-7046 
+                  </Link> 
+                  <br /> 
+                   <Link
+              href="tel:+2349022509463" >
+                +234-902-250-9463
+                  </Link> 
+              
+                  
+                 
                 </p>
               </div>
               {/* second  */}
@@ -69,9 +84,13 @@ const Contact = () => {
               {/* first  */}
               <div className="flex-1">
                 <h1 className="font-bold text-xl text-gray-500">Email</h1>
-                <p className="font-light text-sm mt-2 text-gray-600">
-                  Orena@gmail.com
-                </p>
+                      <Link
+              href="mailto:cnwigwe525@gmail.com"
+              className="font-light text-sm mt-2 text-gray-600"
+            >
+             Orena@gmail.com
+            </Link>
+           
               </div>
               {/* second  */}
               <div className="flex-1">

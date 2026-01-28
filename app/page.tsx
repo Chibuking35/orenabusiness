@@ -53,12 +53,12 @@ const Home = () => {
                 </div>
               </div>
               <div className="flex-1 ">
-                <div className="relative flex p-4 w-full h-88 ">
+                <div className="relative flex  w-full h-88 ">
                   <Image
                     src="/slider9.jpg"
                     alt=""
                     fill
-                    className="object-cover rounded-2xl z-0 "
+                    className="object-cover rounded z-0 "
                   />{" "}
                 </div>
               </div>
