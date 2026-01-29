@@ -34,7 +34,7 @@ const About = () => {
                     everyday products. Through custom t-shirts and personalized
                     mugs, we help individuals and brands express their values,
                     vision, and style. For us, branding goes beyond ink on
-                    materials—it &apos;s about telling your story through
+                    materials it&apos;s about telling your story through
                     design.
                   </p>
 
@@ -43,7 +43,7 @@ const About = () => {
                     organizations to create designs that connect, inspire, and
                     leave a lasting impression. From concept to final print,
                     every detail is carefully crafted to ensure quality,
-                    creativity, and authenticity—helping your brand stand out
+                    creativity, and authenticity helping your brand stand out
                     and be remembered.
                   </p>
                 </div>

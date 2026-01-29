@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { items } from "@/lib/data";
 import Link from "next/link";
+import UserDropdown from "@/components/UserDropdown";
 
 export default async function ItemDetail({ params }: { params: { id: string } }) {
   // Unwrap params if it is a promise
@@ -26,10 +27,9 @@ export default async function ItemDetail({ params }: { params: { id: string } })
           <h1 className="text-3xl font-bold mb-2 text-gray-600">{item.title}</h1>
           <p className="text-xl text-green-600 mb-4">{item.price}</p>
           <p className="text-gray-500 mb-6">{item.description}</p>
-          <Link href='/contact'>
-          <button className="px-3 py-2 bg-red-500 text-white rounded-lg">
-            Contact
-          </button></Link>
+        
+   
+              <UserDropdown />
         </div>
       </div>
     </div>
