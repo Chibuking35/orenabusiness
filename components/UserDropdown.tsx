@@ -50,9 +50,9 @@ export default function ContactDropdown() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="absolute left-0 mt-3 w-56 bg-white/80 backdrop-blur-xl border shadow-lg rounded-xl z-50"
+            className="absolute left-0 mt-3 w-56 bg-white/80 backdrop-blur-xl shadow-lg rounded-xl z-50"
           >
-            <div className="flex flex-col p-2 items-start">
+            <div className="flex flex-col py-2 items-start">
    
 
               {/* WhatsApp */}
@@ -73,7 +73,7 @@ export default function ContactDropdown() {
               {/* Email */}
               <Link
                 href="mailto:yourbrand@email.com"
-                className="flex items-center gap-3 w-full px-3 py-2 rounded-lg hover:bg-gray-300 transition"
+                className="flex items-center gap-3 w-full px-3 py-2 rounded-lg hover:bg-gray-100 transition"
               >
                 <Image src="/e1.png" alt="Email" width={40} height={40} />
                          <span className="text-sm text-gray-700">Email</span>
@@ -83,7 +83,7 @@ export default function ContactDropdown() {
               <Link
                           href="tel:+2349161637046"
 
-                className="flex items-center gap-3 w-full px-3 py-2 rounded-lg hover:bg-gray-300 transition"
+                className="flex items-center gap-3 w-full px-3 py-2 rounded-lg hover:bg-gray-100 transition"
               >
                 <Image src="/call.png" alt="Email" width={40} height={40} />
                          <span className="text-sm text-gray-700">call</span>
@@ -92,7 +92,7 @@ export default function ContactDropdown() {
               {/* more */}
               <Link
                 href="/contact"
-                className="flex w-full items-center justify-center gap-3 px-3 py-2  rounded-lg hover:bg-gray-300 transition"
+                className="flex w-full items-center justify-center gap-3 px-3 py-2  rounded-lg hover:bg-gray-100 transition"
               >
                 <span className="text-sm text-gray-600">More</span>
               </Link>
