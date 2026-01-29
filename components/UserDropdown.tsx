@@ -27,6 +27,9 @@ export default function ContactDropdown() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // Function to close dropdown when an option is clicked
+  const handleOptionClick = () => setOpen(false);
+
   return (
     <div ref={dropdownRef} className="relative inline-block text-left">
       {/* Trigger */}
@@ -53,45 +56,41 @@ export default function ContactDropdown() {
             className="absolute left-0 mt-3 w-56 bg-white/80 backdrop-blur-xl shadow-lg rounded-md z-50"
           >
             <div className="flex flex-col items-start">
-   
-
               {/* WhatsApp */}
               <Link
                 href="https://wa.me/2349161637046"
                 target="_blank"
+                onClick={handleOptionClick}
                 className="flex items-center gap-3 w-full px-3 py-2 rounded-t-xl hover:bg-gray-100 transition"
               >
-                <Image
-                  src="/wa1.png"
-                  alt="WhatsApp"
-                  width={28}
-                  height={28}
-                />
+                <Image src="/wa1.png" alt="WhatsApp" width={28} height={28} />
                 <span className="text-sm text-gray-700">WhatsApp</span>
               </Link>
 
               {/* Email */}
               <Link
                 href="mailto:yourbrand@email.com"
-                className="flex items-center gap-3 w-full px-3 py-2  hover:bg-gray-100 transition"
+                onClick={handleOptionClick}
+                className="flex items-center gap-3 w-full px-3 py-2 hover:bg-gray-100 transition"
               >
                 <Image src="/e1.png" alt="Email" width={40} height={40} />
-                         <span className="text-sm text-gray-700">Email</span>
+                <span className="text-sm text-gray-700">Email</span>
               </Link>
 
               {/* Call */}
               <Link
-                          href="tel:+2349161637046"
-
-                className="flex items-center gap-3 w-full px-3 py-2  hover:bg-gray-100 transition"
+                href="tel:+2349161637046"
+                onClick={handleOptionClick}
+                className="flex items-center gap-3 w-full px-3 py-2 hover:bg-gray-100 transition"
               >
-                <Image src="/call.png" alt="Email" width={40} height={40} />
-                         <span className="text-sm text-gray-700">call</span>
+                <Image src="/call.png" alt="Call" width={40} height={40} />
+                <span className="text-sm text-gray-700">Call</span>
               </Link>
 
-              {/* more */}
+              {/* More */}
               <Link
                 href="/contact"
+                onClick={handleOptionClick}
                 className="flex w-full items-center justify-center gap-3 px-3 py-2 rounded-b-md bg-gray-200 hover:bg-gray-100 transition"
               >
                 <span className="text-sm text-gray-600">More</span>
