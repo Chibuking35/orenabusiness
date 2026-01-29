@@ -4,76 +4,77 @@ export const items = [
     title: "Shirt  customization",
     price: "",
     image: "/lit.jpg",
-    description: "A premium creative design for branding."
+    description:
+      "This customizable T-shirt is available in a variety of colors to match your style. The price varies depending on the number of prints, the size of the design, and whether printing is on the front, back, or both. Bulk orders are eligible for discounts, and you can easily choose your preferred color and quantity before customizing your order.",
   },
   {
     id: "2",
     title: "Tumbler customization",
     price: "",
     image: "/tumb.jpg",
-    description: ""
+    description: "This tumbler can be fully customized with your preferred design, making it a perfect gift or personal accessory. The price is based on the number of prints or quantity ordered, so you can scale your order to suit your needs. Bulk orders qualify for discounts, and each tumbler is carefully crafted to ensure high-quality printing that lasts. Whether for personal use, events, or promotional purposes, this tumbler is designed to combine style, functionality, and personalization.",
   },
   {
     id: "3",
     title: "Cap customization",
     price: "",
     image: "/cap.jpg",
-    description: ""
+    description: "Cap can be customized with your preferred design, making it ideal for personal style, events, or promotional use. The price depends on the number of prints or quantity ordered, with bulk orders eligible for discounts. Each cap is carefully crafted to ensure high-quality printing that lasts, combining comfort, durability, and a personalized touch. Whether for gifting, branding, or personal use, this cap lets you express your style while maintaining quality and functionality.",
   },
   {
     id: "4",
     title: "Hoodies customization",
     price: "",
     image: "/hoody.jpg",
-    description: ""
+    description: "This hoodie can be customized with your preferred design, making it perfect for personal style, events, or promotional purposes. The price is determined by the number of prints or quantity ordered, with bulk orders eligible for discounts. Each hoodie is carefully made to ensure high-quality printing that lasts while providing comfort and durability. Whether for gifting, branding, or everyday wear, this hoodie combines personalization, style, and functionality.",
   },
   {
     id: "5",
     title: "Pen customization",
     price: "",
     image: "/pene.jpg",
-    description: "Professional logo design for your business."
+    description: "Add your personal touch to this pen with your own design or message. Pricing is based on the number of prints or quantity ordered, and bulk orders receive special discounts. Designed for smooth writing and lasting quality, this pen is perfect for gifts, events, or promotional use, letting you make an impression in style.",
   },
   {
     id: "6",
     title: "Mug Cup customization",
     price: "",
     image: "/mug.jpg",
-    description: ""
+    description: "Customize this mug with your own design or message. The price depends on the number of prints or quantity ordered, with bulk orders eligible for discounts. Each mug is made for durability and everyday use, making it perfect for gifts, events, or promotional purposes. Add a personal touch to your morning coffee or tea and make it uniquely yours.",
   },
   {
     id: "7",
     title: "Business Card",
     price: "",
     image: "/card.jpg",
-    description: ""
+    description: "Design your own business cards to make a lasting impression. The price depends on the quantity ordered, with bulk orders eligible for discounts. Each card is crafted with quality materials to ensure a professional look and feel, making them perfect for networking, events, or promotional purposes. Add your personal or business details to create cards that truly represent you.",
   },
   {
     id: "8",
     title: "Tote Bag customization",
     price: "",
     image: "/tote.jpg",
-    description: ""
+    description: "Customize this tote bag with your own design or message. The price depends on the number of prints or quantity ordered, with bulk orders eligible for discounts. Each tote bag is made for durability and everyday use, making it perfect for gifts, events, or promotional purposes. Carry your essentials in style while showing off a personalized touch.",
   },
   {
     id: "9",
     title: "Jerssy  customization",
     price: "",
     image: "/jerssy.jpg",
-    description: ""
+    description: "Personalize this jersey with your preferred design, name, or number. The price depends on the number of prints or quantity ordered, with bulk orders eligible for discounts. Each jersey is crafted for comfort, durability, and high-quality printing, making it perfect for sports teams, events, or gifts. Stand out in style while showcasing your unique design.",
   },
   {
     id: "10",
     title: "sash customization",
     price: "",
     image: "/sash.jpg",
-    description: ""
+    description: "Customize this sash with your preferred design, text, or logo. The price depends on the number of prints or quantity ordered, with bulk orders eligible for discounts. Each sash is crafted for durability and elegance, making it perfect for events, celebrations, or promotional purposes. Add a personal touch to make your occasion truly memorable.",
   },
   {
     id: "11",
     title: "Sign Out shirt customization",
     price: "",
     image: "/sign.jpg",
-    description: ""
+    description: "Customize this “Sign Out” shirt with your preferred design or text. The price depends on the number of prints or quantity ordered, with bulk orders eligible for discounts. Each shirt is made for comfort, durability, and high-quality printing, making it perfect for personal use, events, or gifts. Stand out with a unique design that reflects your style.",
   },
 ];

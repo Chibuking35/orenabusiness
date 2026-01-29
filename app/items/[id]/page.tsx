@@ -26,7 +26,7 @@ export default async function ItemDetail({ params }: { params: { id: string } })
         <div className="md:w-1/2">
           <h1 className="text-3xl font-bold mb-2 text-gray-600">{item.title}</h1>
           <p className="text-xl text-green-600 mb-4">{item.price}</p>
-          <p className="text-gray-500 mb-6">{item.description}</p>
+          <p className="text-gray-500 text-base mb-6">{item.description}</p>
         
    
               <UserDropdown />

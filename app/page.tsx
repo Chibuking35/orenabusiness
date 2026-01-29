@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { CgToolbarTop } from "react-icons/cg";
 import { FaWhatsapp } from "react-icons/fa";
-import { FaCircleDot } from "react-icons/fa6";
 import { GoDotFill } from "react-icons/go";
 import { GrCubes } from "react-icons/gr";
 import { IoCallOutline } from "react-icons/io5";
