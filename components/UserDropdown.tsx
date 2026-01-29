@@ -52,7 +52,7 @@ export default function ContactDropdown() {
             transition={{ duration: 0.2 }}
             className="absolute left-0 mt-3 w-56 bg-white/80 backdrop-blur-xl shadow-lg rounded-xl z-50"
           >
-            <div className="flex flex-col py-2 items-start">
+            <div className="flex flex-col  items-start">
    
 
               {/* WhatsApp */}
