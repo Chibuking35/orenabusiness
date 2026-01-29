@@ -17,9 +17,7 @@ export default function ItemCard({ item }: any) {
           className="w-full h-48 object-cover"
         />
 
-        <div className="p-4">
-          <p className="text-sm text-gray-500">{item.price}</p>
-        </div>
+     
       </div>
     </Link>
   );
