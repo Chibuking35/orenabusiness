@@ -57,7 +57,7 @@ export default function ContactDropdown() {
 
               {/* WhatsApp */}
               <Link
-                href="https://wa.me/234XXXXXXXXXX"
+                href="https://wa.me/2349161637046"
                 target="_blank"
                 className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 transition"
               >
@@ -73,7 +73,7 @@ export default function ContactDropdown() {
               {/* Email */}
               <Link
                 href="mailto:yourbrand@email.com"
-                className="flex items-start gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 transition"
+                className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 transition"
               >
                 <Image src="/e1.png" alt="Email" width={40} height={40} />
                          <span className="text-sm text-gray-700">Email</span>
@@ -83,18 +83,18 @@ export default function ContactDropdown() {
               <Link
                           href="tel:+2349161637046"
 
-                className="flex items-start gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 transition"
+                className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 transition"
               >
-                <Image src="/e1.png" alt="Email" width={40} height={40} />
+                <Image src="/call.png" alt="Email" width={40} height={40} />
                          <span className="text-sm text-gray-700">call</span>
               </Link>
 
               {/* more */}
               <Link
                 href="/contact"
-                className="flex items-start gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 transition"
+                className="flex items-center justify-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 transition"
               >
-                <span className="text-sm text-gray-700">More</span>
+                <span className="text-sm text-gray-600">More</span>
               </Link>
             </div>
           </motion.div>
