@@ -50,26 +50,13 @@ export default function ContactDropdown() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="absolute right-0 mt-3 w-56 bg-white/80 backdrop-blur-xl border shadow-lg rounded-xl z-50"
+            className="absolute left-0 mt-3 w-56 bg-white/80 backdrop-blur-xl border shadow-lg rounded-xl z-50"
           >
-            <div className="flex flex-col p-2">
-              {/* WhatsApp Business */}
-              <a
-                href="https://wa.me/234XXXXXXXXXX"
-                target="_blank"
-                className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 transition"
-              >
-                <Image
-                  src="/wb1.png"
-                  alt="WhatsApp Business"
-                  width={28}
-                  height={28}
-                />
-                <span className="text-sm text-gray-700">WhatsApp Business</span>
-              </a>
+            <div className="flex flex-col p-2 items-start">
+   
 
               {/* WhatsApp */}
-              <a
+              <Link
                 href="https://wa.me/234XXXXXXXXXX"
                 target="_blank"
                 className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 transition"
@@ -81,21 +68,31 @@ export default function ContactDropdown() {
                   height={28}
                 />
                 <span className="text-sm text-gray-700">WhatsApp</span>
-              </a>
+              </Link>
 
               {/* Email */}
-              <a
+              <Link
                 href="mailto:yourbrand@email.com"
-                className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 transition"
+                className="flex items-start gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 transition"
               >
                 <Image src="/e1.png" alt="Email" width={40} height={40} />
                          <span className="text-sm text-gray-700">Email</span>
-              </a>
+              </Link>
+
+              {/* Call */}
+              <Link
+                          href="tel:+2349161637046"
+
+                className="flex items-start gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 transition"
+              >
+                <Image src="/e1.png" alt="Email" width={40} height={40} />
+                         <span className="text-sm text-gray-700">call</span>
+              </Link>
 
               {/* more */}
               <Link
                 href="/contact"
-                className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 transition"
+                className="flex items-start gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 transition"
               >
                 <span className="text-sm text-gray-700">More</span>
               </Link>
