@@ -59,7 +59,7 @@ export default function ContactDropdown() {
               <Link
                 href="https://wa.me/2349161637046"
                 target="_blank"
-                className="flex items-center gap-3 w-full px-3 py-2  hover:bg-gray-100 transition"
+                className="flex items-center gap-3 w-full px-3 py-2 rounded-t-xl hover:bg-gray-100 transition"
               >
                 <Image
                   src="/wa1.png"
@@ -92,7 +92,7 @@ export default function ContactDropdown() {
               {/* more */}
               <Link
                 href="/contact"
-                className="flex w-full items-center justify-center gap-3 px-3 py-2   hover:bg-gray-100 transition"
+                className="flex w-full items-center justify-center gap-3 px-3 py-2 rounded-b-xl  hover:bg-gray-100 transition"
               >
                 <span className="text-sm text-gray-600">More</span>
               </Link>
