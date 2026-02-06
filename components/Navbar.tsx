@@ -15,14 +15,11 @@ const Navbar = () => {
 
   // Nav links
   const allNavLinks = [
-    { name: "Home", href: "/" }, 
-     { name: "About", href: "/about" },  
-      { name: "What We Do", href: "/service" },
-     { name: "Contact", href: "/contact" },
-   
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "What We Do", href: "/service" },
     { name: "Gallery", href: "/gallery" },
-  
-   
+    { name: "Contact", href: "/contact" },
   ];
 
   // Handle scroll show/hide (mobile only)
@@ -83,8 +80,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-6">
           {allNavLinks.map((link) => {
             const isActive =
-              pathname === link.href ||
-              pathname.startsWith(link.href + "/");
+              pathname === link.href || pathname.startsWith(link.href + "/");
 
             return (
               <div key={link.name} className="flex flex-col items-center">
@@ -170,4 +166,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
