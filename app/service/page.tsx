@@ -63,7 +63,7 @@ const Service = () => {
             <MdIndeterminateCheckBox size={30} className="text-white" />
 
             <div className="mt-3 text-xs text-white">
-              <h1 className="text-base">
+              <h1 className="text-base text-justify">
                 At our core, Orena is a creative branding company that
                 transforms everyday items into meaningful expressions of
                 identity. Beyond creating custom products, we share our
