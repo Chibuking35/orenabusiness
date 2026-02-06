@@ -16,10 +16,13 @@ const Navbar = () => {
   // Nav links
   const allNavLinks = [
     { name: "Home", href: "/" }, 
-    { name: "What We Do", href: "/service" },
+     { name: "About", href: "/about" },  
+      { name: "What We Do", href: "/service" },
+     { name: "Contact", href: "/contact" },
+   
     { name: "Gallery", href: "/gallery" },
-    { name: "Contact", href: "/contact" },
-    { name: "About", href: "/about" },
+  
+   
   ];
 
   // Handle scroll show/hide (mobile only)

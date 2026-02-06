@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 
   
@@ -44,6 +46,21 @@ const Footer = () => {
             Get started with custom designs <br />that stand out.
           </h1>
           <Link href='/contact'  className="px-5 cursor-pointer py-2 rounded-2xl  text-gray-500 hover:text-white hover:bg-gray-600 bg-white text-center " >Contact now</Link>
+
+              <div className="flex justify-center md:mt-10 flex-row gap-3 mt-4 items-center">
+            <Link href="/contact" className=" mb-10">
+              <FaWhatsapp size={22} />
+            </Link>
+            <Link href="/contact" className=" mb-10">
+              <FaXTwitter size={22} />
+            </Link>
+            <Link href="/contact" className=" mb-10">
+              <FaFacebookF size={22} />
+            </Link>
+            <Link href="/contact" className=" mb-10">
+              <FaInstagram size={22} />
+            </Link>
+          </div>
         </div>
       </div>
       <div className="text-center text-gray-500 text-xs mt-5">

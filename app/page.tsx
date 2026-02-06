@@ -14,7 +14,7 @@ const Home = () => {
     <div className="min-h-screen bg-white">
       <Slider />
 
-      <div className=" bg-white  flex flex-col  md:flex-row py-7 md:py-6">
+      <div className=" bg-white  flex flex-col  md:flex-row py-7 md:py-4">
         <div className=" w-full flex flex-col md:flex-row">
           <div className="w-full p-3 md:px-6 md:my-20">
             <ItemGrid />

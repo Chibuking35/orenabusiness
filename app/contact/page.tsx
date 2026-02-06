@@ -74,8 +74,9 @@ const Contact = () => {
                 <p className="text-sm text-gray-500">
                   Imo State, Nigeria &#40;within the Federal University of
                   Technology Owerri&#41; PMB 1526, Owerri, Imo State, Nigeria
-                  &#40;Postal Code: 460114&#41; Delivering premium branding
-                  solutions and creative brand experiences worldwide.
+                  &#40;Postal Code: 460114&#41; 
+                  Delivering premium branding
+                  solutions and creative brand experiences nationwide.
                 </p>
               </div>
             </div>
