@@ -2,9 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 
 interface Slide {
   word: string;
@@ -15,9 +12,9 @@ interface Slide {
 const slides: Slide[] = [
   {
     word: "Welcome to Orena",
-    image: "/s1.jpg",
+    image: "/s44.jpg",
     description:
-      " Where everyday items become powerful expressions of identity. Explore personalized designs crafted to reflect your values, vision, and style.",
+      " Where everyday items become powerful expressions of identity.  Explore personalized designs crafted to reflect your values, vision, and style.",
   },
   {
     word: "Make Your Brand Known",
