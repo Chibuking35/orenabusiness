@@ -11,10 +11,10 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    word: "Welcome to Orena",
+    word: "Orena",
     image: "/s44.jpg",
     description:
-      " Where everyday items become powerful expressions of identity.  Explore personalized designs crafted to reflect your values, vision, and style.",
+   "When quality matters... ",
   },
   {
     word: "Make Your Brand Known",
@@ -60,7 +60,7 @@ const Slider = () => {
  
      
 
-      {/* Right Side */}
+      
       <div className="md:w-2/2 relative flex items-center  justify-center h-96 md:h-screen">
         {/* Background Image */}
         <Image
