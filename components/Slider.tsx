@@ -56,7 +56,7 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className="w-full h-fit flex flex-col lg:flex-row">
+    <div className="w-full  flex flex-col lg:flex-row">
  
      
 
