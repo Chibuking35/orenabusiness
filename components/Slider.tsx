@@ -77,7 +77,7 @@ const Slider = () => {
             <h1 className="text-2xl md:text-4xl text-white font-bold drop-shadow-lg">
               {slides[current].word}
             </h1>
-            <p className="mt-2 text-gray-400 text-sm md:text-lg font-light w-[70%] md:w-full">
+            <p className="mt-2 text-gray-400 text-sm md:text-lg font-normal w-[70%] md:w-full">
               {slides[current].description}
             </p>
           </div>
