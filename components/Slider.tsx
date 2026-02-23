@@ -12,7 +12,7 @@ interface Slide {
 const slides: Slide[] = [
   {
     word: "Orena",
-    image: "/s44.jpg",
+    image: "/exp.jpg",
     description:
    "When quality matters... ",
   },

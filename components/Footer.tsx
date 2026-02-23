@@ -39,7 +39,7 @@ const Footer = () => {
               <h1 className="text-gray-600 text-base font-semibold">Phone</h1>
               <div className="flex flex-col md:flex-row gap-3">
               <h3 className="text-sm">+234-9161-6370-46,</h3>
-              <h3 className="text-sm">+234-902-250-9463</h3></div>
+              <h3 className="text-sm">+234-902-250-9463.</h3></div>
             </div>
           </div>
         </div>
