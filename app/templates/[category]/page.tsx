@@ -23,7 +23,7 @@ export default async function CategoryPage({
   const categoryDesigns = designs[category] || [];
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6 bg-white min-h-screen ">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6 bg-white ">
       {categoryDesigns.map((design) => (
         <Link
           key={design.id}
