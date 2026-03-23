@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -6,12 +6,8 @@ import { useRouter } from "next/navigation";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-
-  
-
 const Footer = () => {
-    
-    const router = useRouter();
+  const router = useRouter();
   return (
     <div className="w-full px-10 md:px-10 pt-10 md:pt-10 pb-1  bg-gray-200 text-gray-500">
       <div className="justify-between flex flex-col md:flex-row gap-13 md:gap-0">
@@ -33,23 +29,30 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row mt-8 gap-3 md:gap-5">
             <div className="flex flex-col">
               <h1 className="text-gray-600 text-base font-semibold">Email</h1>
-              <h3 className="text-sm"> orena@gmail.com</h3>
+              <h3 className="text-sm"> orenacustomerservice@gmail.com</h3>
             </div>
             <div className="flex flex-col">
               <h1 className="text-gray-600 text-base font-semibold">Phone</h1>
               <div className="flex flex-col md:flex-row gap-3">
-              <h3 className="text-sm">+234-9161-6370-46,</h3>
-              <h3 className="text-sm">+234-902-250-9463.</h3></div>
+                <h3 className="text-sm">+234-916-163-7046,</h3>
+                <h3 className="text-sm">+234-911-377-1950.</h3>
+              </div>
             </div>
           </div>
         </div>
         <div className="flex-col flex-1 flex gap-4 py-5 md:py-0">
           <h1 className="text-3xl text-red-500 justify-end">
-            Get started with custom designs <br />that stand out.
+            Get started with custom designs <br />
+            that stand out.
           </h1>
-          <Link href='/contact'  className="px-5 cursor-pointer py-2 rounded-2xl  text-gray-500 hover:text-white hover:bg-gray-600 bg-white text-center " >Contact now</Link>
+          <Link
+            href="/contact"
+            className="px-5 cursor-pointer py-2 rounded-2xl  text-gray-500 hover:text-white hover:bg-gray-600 bg-white text-center "
+          >
+            Contact now
+          </Link>
 
-              <div className="flex justify-center md:mt-10 flex-row gap-3 mt-4 items-center">
+          <div className="flex justify-center md:mt-10 flex-row gap-3 mt-4 items-center">
             <Link href="/contact" className=" mb-10">
               <FaWhatsapp size={22} />
             </Link>

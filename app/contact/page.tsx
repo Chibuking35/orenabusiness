@@ -58,8 +58,8 @@ const Contact = () => {
                   </Link> 
                   <br /> 
                    <Link
-              href="tel:+2349022509463" >
-                +234-902-250-9463
+              href="tel:+2349113771950" >
+                +234-911-377-1950
                   </Link> 
               
                   
@@ -89,7 +89,7 @@ const Contact = () => {
               href="mailto:cnwigwe525@gmail.com"
               className="font-light text-sm mt-2 text-gray-600"
             >
-             orena@gmail.com
+             orenacustomerservice@gmail.com
             </Link>
            
               </div>

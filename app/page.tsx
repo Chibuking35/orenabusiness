@@ -128,7 +128,7 @@ const Home = () => {
         <div className="absolute z-20 text-2xl text-white font-bold">
           <div className="flex flex-col md:flex-row gap-3">
             <Link
-              href="https://wa.me/2349161637046"
+              href="https://wa.me/2349113771950"
               className="flex flex-row items-center justify-center gap-1 text-black bg-white opacity-60 rounded-full hover:scale-105 duration-100 px-4 py-2"
             >
               <FaWhatsapp />{" "}
@@ -138,7 +138,7 @@ const Home = () => {
               </p>
             </Link>
             <Link
-              href="mailto:cnwigwe525@gmail.com"
+              href="mailto:orenacustomerservice@gmail.com"
               className="flex flex-row items-center justify-center gap-1 text-black bg-white opacity-60 rounded-full hover:scale-105 duration-100 px-4 py-2"
             >
               <MdOutlineMarkEmailUnread />{" "}
