@@ -53,13 +53,13 @@ const Footer = () => {
           </Link>
 
           <div className="flex justify-center md:mt-10 flex-row gap-3 mt-4 items-center">
-            <Link href="/contact" className=" mb-10">
+            <Link href="https://wa.me/2349113771950" className=" mb-10">
               <FaWhatsapp size={22} />
             </Link>
             <Link href="/contact" className=" mb-10">
               <FaXTwitter size={22} />
             </Link>
-            <Link href="/contact" className=" mb-10">
+            <Link href="https://www.facebook.com/share/1J1A7eBxth/" className=" mb-10">
               <FaFacebookF size={22} />
             </Link>
             <Link href="/contact" className=" mb-10">

@@ -95,4 +95,12 @@ export const items = [
     description:
       "Customize your “Sign Out” shirt with your preferred design or text. The price depends on the number of prints or quantity ordered, with bulk orders eligible for discounts. Each shirt is made for comfort, durability, and high-quality printing, making it perfect for personal use, events, or gifts. Stand out with a unique design that reflects your style.",
   },
+  {
+    id: "13",
+    title: "Stickers",
+    price: "",
+    image: "/s12.jpg",
+    description:
+"Print custom stickers using your preferred design or text for businesses, branding, packaging, events, promotions, or personal use. Prices depend on the sticker size, quantity, and type of print, with bulk orders eligible for discounts. Each sticker is produced with premium printing and precision cutting for a clean, durable, and professional finish that helps your brand stand out."
+  },
 ];

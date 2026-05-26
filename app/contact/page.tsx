@@ -97,7 +97,7 @@ const Contact = () => {
               <div className="flex-1">
                 <h1 className="text-xl font-bold text-gray-500">Follow Us</h1>
                 <div className="flex flex-row gap-4 justify-start items-center mt-2">
-                  <Link href="https://web.facebook.com/?_rdc=1&_rdr#">
+                  <Link href=" https://www.facebook.com/share/1J1A7eBxth">
                     {" "}
                     <FaFacebook
                       className="text-gray-400
