@@ -46,6 +46,8 @@ const Footer = () => {
             that stand out.
           </h1>
           <Link
+            target="_blank"
+            rel="noopener noreferrer"
             href="/contact"
             className="px-5 cursor-pointer py-2 rounded-2xl  text-gray-500 hover:text-white hover:bg-gray-600 bg-white text-center "
           >
@@ -53,16 +55,36 @@ const Footer = () => {
           </Link>
 
           <div className="flex justify-center md:mt-10 flex-row gap-3 mt-4 items-center">
-            <Link href="https://wa.me/2349113771950" className=" mb-10">
+            <Link
+              href="https://wa.me/2349113771950"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" mb-10"
+            >
               <FaWhatsapp size={22} />
             </Link>
-            <Link href="/contact" className=" mb-10">
+            <Link
+              href="https://x.com/"
+              className=" mb-10"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaXTwitter size={22} />
             </Link>
-            <Link href="https://www.facebook.com/share/1J1A7eBxth/" className=" mb-10">
+            <Link
+              href="https://www.facebook.com/share/1J1A7eBxth/"
+              className=" mb-10"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebookF size={22} />
             </Link>
-            <Link href="/contact" className=" mb-10">
+            <Link
+              href="https://www.instagram.com/accounts/login/?hl=en"
+              className=" mb-10"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaInstagram size={22} />
             </Link>
           </div>

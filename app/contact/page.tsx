@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebook, FaInstagram, } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Contact = () => {
@@ -48,22 +48,11 @@ const Contact = () => {
                 <h1 className="font-bold text-xl text-gray-500">Call Center</h1>
                 <p className="font-light text-sm mt-2 text-gray-600">
                   <span className="font-bold">Phone: </span>
-                   
-              
-             
-               <br />
-                       <Link
-              href="tel:+2349161637046" >
-                 +234-916-163-7046 
-                  </Link> 
-                  <br /> 
-                   <Link
-              href="tel:+2349113771950" >
-                +234-911-377-1950
-                  </Link> 
-              
-                  
-                 
+
+                  <br />
+                  <Link href="tel:+2349161637046">+234-916-163-7046</Link>
+                  <br />
+                  <Link href="tel:+2349113771950">+234-911-377-1950</Link>
                 </p>
               </div>
               {/* second  */}
@@ -74,8 +63,7 @@ const Contact = () => {
                 <p className="text-sm text-gray-500">
                   Imo State, Nigeria &#40;within the Federal University of
                   Technology Owerri&#41; PMB 1526, Owerri, Imo State, Nigeria
-                  &#40;Postal Code: 460114&#41; 
-                  Delivering premium branding
+                  &#40;Postal Code: 460114&#41; Delivering premium branding
                   solutions and creative brand experiences nationwide.
                 </p>
               </div>
@@ -85,19 +73,24 @@ const Contact = () => {
               {/* first  */}
               <div className="flex-1">
                 <h1 className="font-bold text-xl text-gray-500">Email</h1>
-                      <Link
-              href="mailto:cnwigwe525@gmail.com"
-              className="font-light text-sm mt-2 text-gray-600"
-            >
-             orenacustomerservice@gmail.com
-            </Link>
-           
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="mailto:cnwigwe525@gmail.com"
+                  className="font-light text-sm mt-2 text-gray-600"
+                >
+                  orenacustomerservice@gmail.com
+                </Link>
               </div>
               {/* second  */}
               <div className="flex-1">
                 <h1 className="text-xl font-bold text-gray-500">Follow Us</h1>
                 <div className="flex flex-row gap-4 justify-start items-center mt-2">
-                  <Link href=" https://www.facebook.com/share/1J1A7eBxth">
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href=" https://www.facebook.com/share/1J1A7eBxth"
+                  >
                     {" "}
                     <FaFacebook
                       className="text-gray-400
@@ -105,17 +98,24 @@ const Contact = () => {
                       size={20}
                     />{" "}
                   </Link>
-                  <Link href="https://x.com/">
+                  <Link
+                    href="https://x.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaSquareXTwitter
                       className="text-gray-400"
                       size={20}
                     />{" "}
                   </Link>
 
-                  <Link href="https://www.instagram.com/accounts/login/?hl=en">
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.instagram.com/accounts/login/?hl=en"
+                  >
                     <FaInstagram className="text-gray-400" size={20} />{" "}
                   </Link>
-                 
                 </div>
               </div>
             </div>
