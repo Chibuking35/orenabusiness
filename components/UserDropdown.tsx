@@ -58,7 +58,7 @@ export default function ContactDropdown() {
             <div className="flex flex-col items-start">
               {/* WhatsApp */}
               <Link
-                href="https://wa.me/2349161637046"
+                href="https://wa.me/2349113771950"
                 target="_blank"
                 onClick={handleOptionClick}
                 className="flex items-center gap-3 w-full px-3 py-2 rounded-t-xl hover:bg-gray-100 transition"
@@ -69,7 +69,7 @@ export default function ContactDropdown() {
 
               {/* Email */}
               <Link
-                href="mailto:yourbrand@email.com"
+                href="mailto:orenacustomerservice@gmail.com"
                 onClick={handleOptionClick}
                 className="flex items-center gap-3 w-full px-3 py-2 hover:bg-gray-100 transition"
               >

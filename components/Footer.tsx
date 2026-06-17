@@ -46,8 +46,6 @@ const Footer = () => {
             that stand out.
           </h1>
           <Link
-            target="_blank"
-            rel="noopener noreferrer"
             href="/contact"
             className="px-5 cursor-pointer py-2 rounded-2xl  text-gray-500 hover:text-white hover:bg-gray-600 bg-white text-center "
           >

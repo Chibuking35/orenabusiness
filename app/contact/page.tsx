@@ -69,14 +69,16 @@ const Contact = () => {
               </div>
             </div>
             {/* the email and social media div  */}
-            <div className="flex flex-row ">
+            <div className="flex flex-col md:flex-row py-4 md:py-0 gap-3 ">
               {/* first  */}
               <div className="flex-1">
-                <h1 className="font-bold text-xl text-gray-500">Email</h1>
+                <h1 className="font-bold text-lg md:text-xl text-gray-500">
+                  Email
+                </h1>
                 <Link
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="mailto:cnwigwe525@gmail.com"
+                  href="mailto:orenacustomerservice@gmail.com"
                   className="font-light text-sm mt-2 text-gray-600"
                 >
                   orenacustomerservice@gmail.com
@@ -84,7 +86,9 @@ const Contact = () => {
               </div>
               {/* second  */}
               <div className="flex-1">
-                <h1 className="text-xl font-bold text-gray-500">Follow Us</h1>
+                <h1 className="text-lg md:text-xl mt-2 md:mt-0 font-bold text-gray-500">
+                  Follow Us
+                </h1>
                 <div className="flex flex-row gap-4 justify-start items-center mt-2">
                   <Link
                     target="_blank"
