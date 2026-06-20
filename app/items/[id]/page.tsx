@@ -39,7 +39,7 @@ export default async function ItemDetail({
           </div>
 
           <div className="my-5 md:my-7">
-            <Video src={item.video} />
+            <Video  src={item.video} />
           </div>
         </div>
       </div>
