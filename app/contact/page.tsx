@@ -103,7 +103,7 @@ const Contact = () => {
                     />{" "}
                   </Link>
                   <Link
-                    href="https://x.com/"
+                    href="https://x.com/OrenaOfficial"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

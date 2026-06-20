@@ -38,7 +38,7 @@ export default async function ItemDetail({
             <UserDropdown />
           </div>
 
-          <div className="my-5 md:my-7 mb-15">
+          <div className="my-5 md:my-7 mb-20">
             <Video  src={item.video} />
           </div>
         </div>

@@ -62,7 +62,7 @@ const Footer = () => {
               <FaWhatsapp size={22} />
             </Link>
             <Link
-              href="https://x.com/"
+              href="https://x.com/OrenaOfficial"
               className=" mb-10"
               target="_blank"
               rel="noopener noreferrer"
