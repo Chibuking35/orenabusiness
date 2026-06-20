@@ -7,6 +7,8 @@ export default function ItemGrid() {
       {items.map((item) => (
         <ItemCard key={item.id} item={item} />
       ))}
+
+      
     </div>
   );
 }

@@ -1,9 +1,13 @@
 import Image from "next/image";
 import { items } from "@/lib/data";
-import Link from "next/link";
 import UserDropdown from "@/components/UserDropdown";
+import Video from "@/components/video";
 
-export default async function ItemDetail({ params }: { params: { id: string } }) {
+export default async function ItemDetail({
+  params,
+}: {
+  params: { id: string };
+}) {
   // Unwrap params if it is a promise
   const { id } = await params; // <-- unwrap params here
 
@@ -24,12 +28,19 @@ export default async function ItemDetail({ params }: { params: { id: string } })
           />
         </div>
         <div className="md:w-1/2">
-          <h1 className="text-3xl font-bold mb-2 text-gray-600">{item.title}</h1>
+          <h1 className="text-3xl font-bold mb-2 text-gray-600">
+            {item.title}
+          </h1>
           <p className="text-xl text-green-600 mb-4">{item.price}</p>
           <p className="text-gray-500 text-base mb-6">{item.description}</p>
-        
-   
-              <UserDropdown />
+
+          <div className="my-2 md:my-5">
+            <UserDropdown />
+          </div>
+
+          <div className="my-2 md:my-5">
+            <Video src={item.video} />
+          </div>
         </div>
       </div>
     </div>
