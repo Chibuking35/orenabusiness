@@ -6,7 +6,7 @@ export const items = [
     title: "Shirt  customization",
     price: "",
     image: "/lit.jpg",
-      video: "/tshirt.mp4",
+      video: "/shirt.mp4",
     description:
       "Customize your T-shirt to match your personal style. Choose from a variety of colors and create a design that truly represents you. Pricing depends on the number of prints, the size of the design, and whether the print is placed on the front, back, or both sides. For more details and to place your order, please contact us directly.",
   },
