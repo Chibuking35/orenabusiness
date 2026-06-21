@@ -39,9 +39,11 @@ export default function Video({ src }: VideoProps) {
       controls
       muted
       playsInline
-      className="w-full rounded-md"
+      className="w-full rounded-md md:max-h-95 object-contain"
     >
       <source src={src} type="video/mp4" />
     </video>
+
+    
   );
 }
