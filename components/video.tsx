@@ -36,6 +36,7 @@ export default function Video({ src }: VideoProps) {
   return (
     <video
       ref={videoRef}
+      loop
       controls
       muted
       playsInline
