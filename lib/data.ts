@@ -42,7 +42,7 @@ export const items = [
     title: "Pen customization",
     price: "",
     image: "/pene.jpg",
-      video: "/tumbler.mp4",
+      video: "/pen.mp4",
     description:
       "Customize your pen with your own design or message and make every detail pop. From bold, eye-catching graphics to sleek, elegant logos, your pen can showcase your unique style with flair. Pricing is based on the number of prints or quantity ordered, with bulk orders eligible for special discounts. Crafted for smooth writing and lasting quality, this pen turns everyday use into a statement. For more details and to place your order, please contact us directly.",
   },
