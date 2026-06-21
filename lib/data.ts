@@ -51,7 +51,7 @@ export const items = [
     title: "Custom Lanyard",
     price: "",
     image: "/lanyard.jpg",
-      video: "/tumbler.mp4",
+      video: "/lanyard.mp4",
     description:
       "Customize your lanyard with your own design or message and let your brand stand out effortlessly. From bold, eye-catching prints to clean, professional logos, your lanyard can reflect your identity with confidence. Pricing is based on the quantity ordered, with bulk orders eligible for special discounts. Made from durable, high-quality materials, our lanyards are perfect for offices, schools, events, and promotions, combining comfort, strength, and style in one practical accessory. Contact us for more details and to place your order.",
   },
