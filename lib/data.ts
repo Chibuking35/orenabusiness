@@ -33,7 +33,7 @@ export const items = [
     title: "Hoodies customization",
     price: "",
     image: "/hoody.jpg",
-      video: "/tumbler.mp4",
+      video: "/hoodies.mp4",
     description:
       "Customize your hoodie with your preferred design and create a look that stands out. Whether you prefer bold prints, subtle logos, or creative artwork, your hoodie can be styled to match your vibe. Pricing is determined by the number of prints or the quantity ordered, with bulk orders eligible for discounts. Each hoodie is carefully made to ensure high-quality, long-lasting printing while offering comfort and durability. For more details and to place your order, please contact us directly.",
   },
