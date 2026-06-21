@@ -24,7 +24,7 @@ export const items = [
     title: "Cap customization",
     price: "",
     image: "/cap.jpg",
-      video: "/tumbler.mp4",
+      video: "/cap.mp4",
     description:
       "Customize your cap with your preferred design and step out in style. Whether you choose bold graphics, clean minimalist prints, or detailed logos, your cap can be tailored to reflect your unique look. Pricing depends on the number of prints or the quantity ordered, with bulk orders eligible for discounts. Each cap is carefully crafted to deliver high-quality, long-lasting printing while maintaining comfort and durability. For more details and to place your order, please contact us directly.",
   },
