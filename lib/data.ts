@@ -15,7 +15,7 @@ export const items = [
     title: "Tumbler customization",
     price: "",
     image: "/tumb.jpg",
-    video: "/tumbler.mp4",
+    video: "/tumblerr.mp4",
     description:
       "Customize your tumbler with your preferred design to match your style. Pricing is based on the number of prints or the quantity ordered. Each tumbler is carefully crafted to ensure high-quality, long-lasting printing. For more details and to place your order, please contact us directly.",
   },
