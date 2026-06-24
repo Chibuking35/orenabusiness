@@ -56,12 +56,11 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className="w-full  flex flex-col lg:flex-row">
  
      
 
       
-      <div className="md:w-2/2 relative flex items-center  justify-center h-96 md:h-screen">
+      <div className="md:w-2/2 relative flex items-center  justify-center h-96 md:h-screen w-full  flex flex-col lg:flex-row ">
         {/* Background Image */}
         <Image
           src={slides[current].image}
@@ -107,7 +106,7 @@ const Slider = () => {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 };
 
