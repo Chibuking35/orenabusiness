@@ -114,7 +114,7 @@ export const items = [
     title: "Stickers",
     price: "",
     image: "/s12.jpg",
-      video: "/tumbler.mp4",
+      video: "/sticker.mp4",
     description:
       "Print custom stickers using your preferred design or text for businesses, branding, packaging, events, promotions, or personal use. Prices depend on the sticker size, quantity, and type of print, with bulk orders eligible for discounts. Each sticker is produced with premium printing and precision cutting for a clean, durable, and professional finish that helps your brand stand out.",
   },
