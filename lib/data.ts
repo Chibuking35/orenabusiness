@@ -96,7 +96,7 @@ export const items = [
     title: "sash customization",
     price: "",
     image: "/sash.jpg",
-      video: "/tumbler.mp4",
+      video: "/sash.mp4",
     description:
       "Customize your sash with your preferred design, text, or logo. The price depends on the number of prints or quantity ordered, with bulk orders eligible for discounts. Each sash is crafted for durability and elegance, making it perfect for events, celebrations, or promotional purposes. Add a personal touch to make your occasion truly memorable.",
   },
