@@ -69,7 +69,7 @@ export const items = [
     title: "Business Card",
     price: "",
     image: "/card.jpg",
-      video: "/tumbler.mp4",
+      video: "/card.mp4",
     description:
       "Design your own business cards to make a lasting impression. The price depends on the quantity ordered, with bulk orders eligible for discounts. Each card is crafted with quality materials to ensure a professional look and feel, making them perfect for networking, events, or promotional purposes. Add your personal or business details to create cards that truly represent you.",
   },
