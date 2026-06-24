@@ -60,7 +60,7 @@ export const items = [
     title: "Mug Cup customization",
     price: "",
     image: "/mug.jpg",
-      video: "/tumbler.mp4",
+      video: "/mug.mp4",
     description:
       "Customize this mug with your own design or message. The price depends on the number of prints or quantity ordered, with bulk orders eligible for discounts. Each mug is made for durability and everyday use, making it perfect for gifts, events, or promotional purposes. Add a personal touch to your morning coffee or tea and make it uniquely yours.",
   },
