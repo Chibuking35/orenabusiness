@@ -79,7 +79,7 @@ export const items = [
     title: "Jerssy  customization",
     price: "",
     image: "/jerssy.jpg",
-      video: "/tumbler.mp4",
+      video: "/jersy.mp4",
     description:
       "Personalize your jersey with your preferred design, name, or number. The price depends on the number of prints or quantity ordered, with bulk orders eligible for discounts. Each jersey is crafted for comfort, durability, and high-quality printing, making it perfect for sports teams, events, or gifts. Stand out in style while showcasing your unique design.",
   },
