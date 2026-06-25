@@ -73,15 +73,7 @@ export const items = [
     description:
       "Design your own business cards to make a lasting impression. The price depends on the quantity ordered, with bulk orders eligible for discounts. Each card is crafted with quality materials to ensure a professional look and feel, making them perfect for networking, events, or promotional purposes. Add your personal or business details to create cards that truly represent you.",
   },
-  {
-    id: "8",
-    title: "Tote Bag customization",
-    price: "",
-    image: "/tote.jpg",
-      video: "/tumbler.mp4",
-    description:
-      "Customize your tote bag with your own design or message. The price depends on the number of prints or quantity ordered, with bulk orders eligible for discounts. Each tote bag is made for durability and everyday use, making it perfect for gifts, events, or promotional purposes. Carry your essentials in style while showing off a personalized touch.",
-  },
+  
   {
     id: "9",
     title: "Jerssy  customization",
@@ -100,17 +92,9 @@ export const items = [
     description:
       "Customize your sash with your preferred design, text, or logo. The price depends on the number of prints or quantity ordered, with bulk orders eligible for discounts. Each sash is crafted for durability and elegance, making it perfect for events, celebrations, or promotional purposes. Add a personal touch to make your occasion truly memorable.",
   },
+ 
   {
-    id: "11",
-    title: "Sign Out shirt customization",
-    price: "",
-    image: "/sign.jpg",
-      video: "/tumbler.mp4",
-    description:
-      "Customize your “Sign Out” shirt with your preferred design or text. The price depends on the number of prints or quantity ordered, with bulk orders eligible for discounts. Each shirt is made for comfort, durability, and high-quality printing, making it perfect for personal use, events, or gifts. Stand out with a unique design that reflects your style.",
-  },
-  {
-    id: "1388",
+    id: "13",
     title: "Stickers",
     price: "",
     image: "/s12.jpg",

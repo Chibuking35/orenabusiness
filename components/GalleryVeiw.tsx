@@ -16,11 +16,13 @@ const Images = [
   "/m4.jpg",
   "/m17.jpg",
   "/m7.jpg",
+  "/tote.jpg",
   "/m21.jpg",
   "/m8.jpg","/m19.jpg",
   "/m9.jpg",
   "/m10.jpg",
   "/m11.jpg",
+  "/sign.jpg",
   "/m12.jpg",
  
   "/m14.jpg",
