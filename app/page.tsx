@@ -18,6 +18,15 @@ const Home = () => {
         <div className=" w-full flex flex-col md:flex-row">
           <div className="w-full p-3 md:px-6 md:my-20">
             <ItemGrid />
+
+            <div className="flex justify-center items-center w-full p-6 py-6 md:py-10 mt-4 md:mt-10 ">
+              <Link
+                href="/gallery"
+                className="rounded-full bg-red-500 px-5 py-2 text-sm text-white hover:bg-red-600 transition-colors"
+              >
+                See More
+              </Link>
+            </div>
           </div>
         </div>
       </div>
