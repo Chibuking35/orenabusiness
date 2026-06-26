@@ -304,33 +304,31 @@ const GalleryVeiw = () => {
                 style={{ x, y, scale, touchAction: "none" }}
                 className="flex items-center justify-center max-w-full max-h-full"
               >
-                <Image
-                  src={selectedMedia.src}
-                  alt="selected"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  style={{
-                    maxWidth: "98vw",
-                    maxHeight: "98vh",
-                    width: "auto",
-                    height: "auto",
-                  }}
-                  draggable={false}
-                  unoptimized={selectedMedia.src.endsWith(".gif")}
-                />
+                <div className="relative max-w-[90vw] max-h-[85vh] flex items-center justify-center">
+                  <Image
+                    src={selectedMedia.src}
+                    alt="selected"
+                    width={1200}
+                    height={1200}
+                    className="object-contain w-auto h-auto max-w-[90vw] max-h-[85vh]"
+                    draggable={false}
+                    unoptimized={selectedMedia.src.endsWith(".gif")}
+                  />
+                </div>
               </animated.div>
             ) : (
-              <video
-                ref={modalVideoRef}
-                controls
-                autoPlay
-                className="max-w-[98vw] max-h-[90vh] w-auto h-auto rounded-lg"
-                playsInline
-              >
-                <source src={selectedMedia.src} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <div className="relative max-w-[95vw] max-h-[85vh] flex items-center justify-center">
+                <video
+                  ref={modalVideoRef}
+                  controls
+                  autoPlay
+                  className="max-w-[95vw] max-h-[85vh] w-auto h-auto rounded-lg"
+                  playsInline
+                >
+                  <source src={selectedMedia.src} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             )}
 
             <button
@@ -340,26 +338,24 @@ const GalleryVeiw = () => {
               <X size={24} />
             </button>
 
-            {/* Navigation Arrows - Only for images */}
-            {selectedMedia.type === "image" && (
-              <>
-                <button
-                  onClick={prevMedia}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 text-white bg-black/50 p-3 rounded-full hover:bg-black/70 transition-colors text-2xl"
-                >
-                  ‹
-                </button>
-                <button
-                  onClick={nextMedia}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-white bg-black/50 p-3 rounded-full hover:bg-black/70 transition-colors text-2xl"
-                >
-                  ›
-                </button>
-                <div className="absolute bottom-24 left-1/2 -translate-x-1/2 text-white/70 text-sm bg-black/50 px-3 py-1 rounded-full">
-                  {currentIndex !== null && `${currentIndex + 1} / ${media.filter(m => m.type === "image").length}`}
-                </div>
-              </>
-            )}
+            {/* Navigation Arrows - For both images and videos */}
+            <button
+              onClick={prevMedia}
+              className="absolute left-4 top-1/2 -translate-y-1/2 text-white bg-black/50 p-3 rounded-full hover:bg-black/70 transition-colors text-2xl z-10"
+            >
+              ‹
+            </button>
+            <button
+              onClick={nextMedia}
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-white bg-black/50 p-3 rounded-full hover:bg-black/70 transition-colors text-2xl z-10"
+            >
+              ›
+            </button>
+
+            {/* Counter - Shows current position among all media */}
+            <div className="absolute bottom-24 left-1/2 -translate-x-1/2 text-white/70 text-sm bg-black/50 px-3 py-1 rounded-full z-10">
+              {currentIndex !== null && `${currentIndex + 1} / ${media.length}`}
+            </div>
           </div>
         </div>
       )}
