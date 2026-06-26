@@ -22,7 +22,7 @@ const Home = () => {
             <div className="flex justify-center items-center w-full p-6 py-6 md:py-10 mt-4 md:mt-10 ">
               <Link
                 href="/gallery"
-                className="rounded-full bg-red-500 px-5 py-2 text-sm text-white hover:bg-red-600 transition-colors"
+                className="rounded-full bg-red-500 px-5 py-2 text-base text-white hover:bg-red-600 transition-colors"
               >
                 See More
               </Link>
