@@ -322,6 +322,7 @@ const GalleryVeiw = () => {
                 <video
                   ref={modalVideoRef}
                   controls
+                  loop
                   autoPlay
                   className="max-w-[95vw] max-h-[85vh] w-auto h-auto rounded-lg"
                   playsInline
