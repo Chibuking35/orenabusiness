@@ -2,7 +2,7 @@
 
 import { useSpring, animated } from "@react-spring/web";
 import { useGesture } from "@use-gesture/react";
-import { X } from "lucide-react";
+import { X, Play } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import Masonry from "react-masonry-css";
@@ -48,7 +48,10 @@ const breakpointColumnsObj = {
 const GalleryVeiw = () => {
   const [selectedMedia, setSelectedMedia] = useState<MediaItem | null>(null);
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
-  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const videoRefs = useRef<{ [key: string]: HTMLVideoElement | null }>({});
+  const modalVideoRef = useRef<HTMLVideoElement | null>(null);
+  const observerRef = useRef<IntersectionObserver | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   const [{ x, y, scale }, api] = useSpring(() => ({
     x: 0,
@@ -58,7 +61,17 @@ const GalleryVeiw = () => {
 
   const lastTapRef = useRef<number>(0);
 
-  const openImage = (item: MediaItem, index: number) => {
+  // Detect mobile screen
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  const openMedia = (item: MediaItem, index: number) => {
     setSelectedMedia(item);
     setCurrentIndex(index);
     api.start({ x: 0, y: 0, scale: 1 });
@@ -66,19 +79,19 @@ const GalleryVeiw = () => {
 
   const closeModal = () => {
     // Pause video when closing modal
-    if (videoRef.current) {
-      videoRef.current.pause();
+    if (modalVideoRef.current) {
+      modalVideoRef.current.pause();
     }
     setSelectedMedia(null);
     setCurrentIndex(null);
     api.start({ x: 0, y: 0, scale: 1 });
   };
 
-  const nextImage = () => {
+  const nextMedia = () => {
     if (currentIndex !== null) {
       // Pause current video if playing
-      if (videoRef.current) {
-        videoRef.current.pause();
+      if (modalVideoRef.current) {
+        modalVideoRef.current.pause();
       }
       const newIndex = (currentIndex + 1) % media.length;
       setCurrentIndex(newIndex);
@@ -87,11 +100,11 @@ const GalleryVeiw = () => {
     }
   };
 
-  const prevImage = () => {
+  const prevMedia = () => {
     if (currentIndex !== null) {
       // Pause current video if playing
-      if (videoRef.current) {
-        videoRef.current.pause();
+      if (modalVideoRef.current) {
+        modalVideoRef.current.pause();
       }
       const newIndex = (currentIndex - 1 + media.length) % media.length;
       setCurrentIndex(newIndex);
@@ -103,30 +116,32 @@ const GalleryVeiw = () => {
   const bind = useGesture(
     {
       onDrag: ({ offset: [dx, dy], swipe: [swipeX] }) => {
-        if (scale.get() > 1.1) {
+        if (selectedMedia?.type === "image" && scale.get() > 1.1) {
           api.start({ x: dx, y: dy });
-        } else {
-          if (swipeX === -1) nextImage();
-          if (swipeX === 1) prevImage();
+        } else if (selectedMedia?.type === "image") {
+          if (swipeX === -1) nextMedia();
+          if (swipeX === 1) prevMedia();
         }
       },
 
       onPinch: ({ offset: [d] }) => {
-        api.start({ scale: Math.max(1, 1 + d / 200) });
+        if (selectedMedia?.type === "image") {
+          api.start({ scale: Math.max(1, 1 + d / 200) });
+        }
       },
 
       onClick: () => {
-        const now = Date.now();
-
-        if (now - lastTapRef.current < 300) {
-          api.start({
-            scale: scale.get() > 1 ? 1 : 2,
-            x: 0,
-            y: 0,
-          });
+        if (selectedMedia?.type === "image") {
+          const now = Date.now();
+          if (now - lastTapRef.current < 300) {
+            api.start({
+              scale: scale.get() > 1 ? 1 : 2,
+              x: 0,
+              y: 0,
+            });
+          }
+          lastTapRef.current = now;
         }
-
-        lastTapRef.current = now;
       },
     },
     {
@@ -139,8 +154,8 @@ const GalleryVeiw = () => {
     if (!selectedMedia) return;
 
     const handleKey = (e: KeyboardEvent) => {
-      if (e.key === "ArrowRight") nextImage();
-      if (e.key === "ArrowLeft") prevImage();
+      if (e.key === "ArrowRight") nextMedia();
+      if (e.key === "ArrowLeft") prevMedia();
       if (e.key === "Escape") closeModal();
     };
 
@@ -149,15 +164,72 @@ const GalleryVeiw = () => {
     return () => window.removeEventListener("keydown", handleKey);
   }, [selectedMedia, currentIndex]);
 
-  // Auto-play video when selected
+  // Setup Intersection Observer for videos with better mobile support
   useEffect(() => {
-    if (selectedMedia?.type === "video" && videoRef.current) {
-      videoRef.current.play().catch((error) => {
-        // Auto-play might be blocked by browser, user will need to click play
-        console.log("Auto-play prevented:", error);
-      });
+    // Disconnect existing observer
+    if (observerRef.current) {
+      observerRef.current.disconnect();
     }
-  }, [selectedMedia]);
+
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const videoElement = entry.target as HTMLVideoElement;
+          if (entry.isIntersecting) {
+            // Video is in view - play it
+            videoElement.play().catch((error) => {
+              console.log("Auto-play prevented:", error);
+            });
+          } else {
+            // Video is out of view - pause it
+            videoElement.pause();
+          }
+        });
+      },
+      {
+        threshold: 0.1, // Lower threshold for mobile (10% visible)
+        rootMargin: "0px 0px -50px 0px", // Slightly reduce the viewport for better performance
+      }
+    );
+
+    // Observe all video elements after a small delay (for Masonry layout to settle)
+    const timeoutId = setTimeout(() => {
+      Object.values(videoRefs.current).forEach((video) => {
+        if (video) {
+          observerRef.current?.observe(video);
+          // Trigger initial play if already visible
+          const rect = video.getBoundingClientRect();
+          const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+          if (isVisible) {
+            video.play().catch((error) => {
+              console.log("Initial auto-play prevented:", error);
+            });
+          }
+        }
+      });
+    }, 300);
+
+    return () => {
+      clearTimeout(timeoutId);
+      observerRef.current?.disconnect();
+    };
+  }, [media, isMobile]);
+
+  // Re-observe videos when component updates or screen size changes
+  useEffect(() => {
+    if (observerRef.current) {
+      // Disconnect and reconnect to handle layout changes
+      observerRef.current.disconnect();
+      
+      setTimeout(() => {
+        Object.values(videoRefs.current).forEach((video) => {
+          if (video) {
+            observerRef.current?.observe(video);
+          }
+        });
+      }, 100);
+    }
+  }, [isMobile]);
 
   return (
     <div className="p-6 py-20 md:py-30 bg-white">
@@ -170,8 +242,10 @@ const GalleryVeiw = () => {
         {media.map((item, index) => (
           <div
             key={item.src}
-            className="cursor-pointer overflow-hidden rounded shadow-md hover:opacity-90 mb-4"
-            onClick={() => openImage(item, index)}
+            className={`overflow-hidden rounded shadow-md hover:opacity-90 mb-4 ${
+              item.type === "image" ? "cursor-pointer" : "cursor-pointer"
+            }`}
+            onClick={() => openMedia(item, index)}
           >
             {item.type === "image" ? (
               <Image
@@ -180,37 +254,56 @@ const GalleryVeiw = () => {
                 width={500}
                 height={500}
                 className="w-full h-auto"
-                unoptimized={item.src.endsWith('.gif')}
+                unoptimized={item.src.endsWith(".gif")}
               />
             ) : (
-              <video
-                muted
-                playsInline
-                className="w-full h-auto rounded-md"
-              >
-                <source src={item.src} type="video/mp4" />
-              </video>
+              <div className="relative">
+                <video
+                  ref={(el) => {
+                    if (el) {
+                      videoRefs.current[item.src] = el;
+                      // Force play on mobile when element is created
+                      if (isMobile) {
+                        setTimeout(() => {
+                          el.play().catch(() => {});
+                        }, 100);
+                      }
+                    }
+                  }}
+                  muted
+                  loop
+                  playsInline
+                  webkit-playsinline="true"
+                  className="w-full h-auto rounded-md"
+                  style={{ minHeight: "200px", background: "#000" }}
+                >
+                  <source src={item.src} type="video/mp4" />
+                </video>
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/30 transition-colors pointer-events-none">
+                  <Play className="w-16 h-16 text-white opacity-70" fill="white" />
+                </div>
+              </div>
             )}
           </div>
         ))}
       </Masonry>
 
-      {/* Modal */}
+      {/* Modal - For both images and videos */}
       {selectedMedia && (
         <div
           className="fixed inset-0 bg-black/95 flex items-center justify-center z-50 p-2"
-          onClick={closeModal}
+          onClick={selectedMedia.type === "image" ? closeModal : undefined}
         >
           <div
             className="relative flex items-center justify-center max-w-full max-h-full"
             onClick={(e) => e.stopPropagation()}
           >
-            <animated.div
-              {...bind()}
-              style={{ x, y, scale, touchAction: "none" }}
-              className="flex items-center justify-center max-w-full max-h-full"
-            >
-              {selectedMedia.type === "image" ? (
+            {selectedMedia.type === "image" ? (
+              <animated.div
+                {...bind()}
+                style={{ x, y, scale, touchAction: "none" }}
+                className="flex items-center justify-center max-w-full max-h-full"
+              >
                 <Image
                   src={selectedMedia.src}
                   alt="selected"
@@ -224,29 +317,49 @@ const GalleryVeiw = () => {
                     height: "auto",
                   }}
                   draggable={false}
-                  unoptimized={selectedMedia.src.endsWith('.gif')}
+                  unoptimized={selectedMedia.src.endsWith(".gif")}
                 />
-              ) : (
-                <video
-                  ref={videoRef}
-                  loop
-                  controls
-                  muted
-                  playsInline
-                  autoPlay
-                  className="w-full rounded-md md:max-h-95 object-contain"
-                >
-                  <source src={selectedMedia.src} type="video/mp4" />
-                </video>
-              )}
-            </animated.div>
+              </animated.div>
+            ) : (
+              <video
+                ref={modalVideoRef}
+                controls
+                autoPlay
+                className="max-w-[98vw] max-h-[90vh] w-auto h-auto rounded-lg"
+                playsInline
+              >
+                <source src={selectedMedia.src} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            )}
 
             <button
               onClick={closeModal}
-              className="absolute top-3 right-4 text-white bg-black/70 p-3 rounded-full hover:bg-black/90 transition-colors"
+              className="absolute top-3 right-4 text-white bg-black/70 p-3 rounded-full hover:bg-black/90 transition-colors z-10"
             >
               <X size={24} />
             </button>
+
+            {/* Navigation Arrows - Only for images */}
+            {selectedMedia.type === "image" && (
+              <>
+                <button
+                  onClick={prevMedia}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 text-white bg-black/50 p-3 rounded-full hover:bg-black/70 transition-colors text-2xl"
+                >
+                  ‹
+                </button>
+                <button
+                  onClick={nextMedia}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-white bg-black/50 p-3 rounded-full hover:bg-black/70 transition-colors text-2xl"
+                >
+                  ›
+                </button>
+                <div className="absolute bottom-24 left-1/2 -translate-x-1/2 text-white/70 text-sm bg-black/50 px-3 py-1 rounded-full">
+                  {currentIndex !== null && `${currentIndex + 1} / ${media.filter(m => m.type === "image").length}`}
+                </div>
+              </>
+            )}
           </div>
         </div>
       )}
