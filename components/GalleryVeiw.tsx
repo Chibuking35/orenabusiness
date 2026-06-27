@@ -13,9 +13,12 @@ type MediaItem = {
 };
 
 const media: MediaItem[] = [
+  {type: "image", src: "/m22.jpg"},
   { type: "image", src: "/m1.jpg" },
   { type: "video", src: "/jersy.mp4" },
   { type: "image", src: "/m2.jpg" },
+  { type: "image", src: "/m26.jpg"},
+  { type: "image", src: "/m25.jpg"},
   { type: "image", src: "/m5.jpg" },
   { type: "image", src: "/m13.jpg" },
   { type: "image", src: "/m15.jpg" },
@@ -23,8 +26,10 @@ const media: MediaItem[] = [
   { type: "video", src: "/phone.mp4" },
   { type: "image", src: "/m3.jpg" },
   { type: "image", src: "/m18.jpg" },
+  { type: "image", src: "/m24.jpg"},
   { type: "image", src: "/m4.jpg" },
   { type: "image", src: "/m17.jpg" },
+  { type: "image", src: "/m27.jpg"},
   { type: "image", src: "/m7.jpg" },
   { type: "image", src: "/tote.jpg" },
   { type: "image", src: "/m21.jpg" },
